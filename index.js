@@ -42,3 +42,4 @@ bot.on('message', msg => {
 
 bot.login(token); //a garder en version desktop
 bot.login(token); //a garder en version heroku
+const token = process.env.token
