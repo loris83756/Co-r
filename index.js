@@ -16,7 +16,7 @@ bot.on('message', message => {
         message.channel.senMessage("Liste des commandes: \n -*help");
     }
 
-    if (message.content,==="Salut"){
+    if (message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
     }
