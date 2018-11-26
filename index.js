@@ -8,7 +8,6 @@ bot.on('ready',function() {
     console.log ("Connectedç");
 });
 
-
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.msg.send("Liste des commandes: \n -*help");
