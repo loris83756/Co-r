@@ -8,12 +8,12 @@ bot.on('ready',function() {
     console.log ("Connectedç");
 });
 
-bot.login("process.env.TOKEN");
+bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.senMessage("Liste des commandes: \n -*help");
+        message.channel.msg.send("Liste des commandes: \n -*help");
     }
 
     if (message.content === "Salut"){
