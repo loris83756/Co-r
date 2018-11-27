@@ -23,7 +23,6 @@ bot.on('message', message => {
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
         
-bot.login(process.env.TOKEN);
-   
-
+        bot.login(process.env.TOKEN);
+    }   
 });          
