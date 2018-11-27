@@ -15,7 +15,7 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "information"){
-        message.reply("_Ce Bot a été développer par loris83756#3705.Le Bot est hébergé chez Heroku._" )
+        message.channel.sendMessage("_Ce Bot a été développer par loris83756#3705. \n Le Bot est hébergé chez Heroku._" )
         console.log("Commande effectué");
     }
     
