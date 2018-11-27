@@ -6,7 +6,6 @@ var prefix = ("*")
 bot.on('ready',function() {
     bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
-});
 
 
 bot.on('message', message => {
