@@ -10,7 +10,7 @@ bot.on('ready',function() {
 
 
 bot.on('message', message => {
-    if (message.content === prefix + "help"){
+    if (message.content === prefix + *help"){
         message.channel.msg.send("Liste des commandes: \n -*help");
     }
 
