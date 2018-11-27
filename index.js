@@ -11,7 +11,7 @@ bot.on('ready',function() {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("**Liste des commandes**: \n ```*informations```: Donne des informations sur le bot.")
+        message.channel.sendMessage("**Liste des commandes**: \n ```*informations:``` Donne des informations sur le bot.")
     }
     
     if (message.content === prefix + "informations"){
