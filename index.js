@@ -24,4 +24,4 @@ bot.on('message', message => {
         console.log("Commande Salut effectué");
         
 bot.login(process.env.TOKEN);
-});   
+   
