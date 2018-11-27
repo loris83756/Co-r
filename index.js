@@ -6,6 +6,7 @@ var prefix = ("*")
 bot.on('ready',function() {
     bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
+   }); 
 
 
 bot.on('message', message => {
@@ -14,7 +15,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "information"){
-        message.reply("_Ce Bot a été développer par loris83756#3705.Le Bot est hébergé chez Heroku._" )
+        message.reply("_Ce Bot a été développer par loris83756#3705.Le Bot est hébergé chez Heroku._")
         console.log("Commande effectué");
     }   
 
