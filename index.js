@@ -17,6 +17,7 @@ bot.on('message', message => {
     if (message.content === prefix + "information"){
         message.reply("_Ce Bot a été développer par loris83756#3705.Le Bot est hébergé chez Heroku._" )
         console.log("Commande effectué");
+    }   
 
     if (message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
