@@ -22,7 +22,6 @@ bot.on('message', message => {
     if (message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
-    }
         
 bot.login(process.env.TOKEN);
 });   
