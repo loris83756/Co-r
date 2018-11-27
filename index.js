@@ -11,10 +11,10 @@ bot.on('ready',function() {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("**Liste des commandes**: \n *information")
+        message.channel.sendMessage("**Liste des commandes**: \n *informations: Donne des informations sur le bot.")
     }
     
-    if (message.content === prefix + "information"){
+    if (message.content === prefix + "informations"){
         message.channel.sendMessage("_Je suis développer par loris83756#3705 et je suis hébergé chez Heroku._" )
         console.log("Commande effectué");
     }
