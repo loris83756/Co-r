@@ -8,6 +8,8 @@ bot.on('ready',function() {
     console.log ("Connectedç");
 });
 
+bot.login(process.env.TOKEN);
+
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
@@ -23,5 +25,5 @@ bot.on('message', message => {
         console.log("Commande Salut effectué");
     }
 });
-bot.login(process.env.TOKEN);
+
     
