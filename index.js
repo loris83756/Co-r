@@ -6,23 +6,17 @@ var prefix = ("*")
 bot.on('ready',function() {
     bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
-   }); 
+});
 
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n *information");
+        message.channel.msg.send("Liste des commandes: \n -*help");
     }
-
-    if (message.content === prefix + "information"){
-        message.reply("_Ce Bot a été développer par loris83756#3705.Le Bot est hébergé chez Heroku._")
-        console.log("Commande effectué");
-    }   
 
     if (message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
-        
-        bot.login(process.env.TOKEN);
-    }   
-});          
+    }
+});
+bot.login(process.env.TOKEN);
