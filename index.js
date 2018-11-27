@@ -11,7 +11,7 @@ bot.on('ready',function() {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("**Liste des commandes**: \n ```*informations:``` Donne des informations sur le bot. \n \n ```*ban: (bientôt disponible)``` Permet de banir des personnes")
+        message.channel.sendMessage("**Liste des commandes**: \n ```*informations: (nouveau)``` Donne des informations sur le bot. \n \n ```*ban: (bientôt disponible)``` Permet de banir des personnes \n \n ```*kick: (bientôt disponible)``` Permet d´expulser des personnes \n \n ```*mute: (bientôt disponible)``` Permet de mute des personnes ")
     }
     
     if (message.content === prefix + "informations"){
