@@ -43,6 +43,7 @@ bot.on('message', message => {
     if (message.content === prfix + "ping"){
         message.channel.sendMessage(`Pong: ${message.createdTimestamp - Date.now()} ms`);
     }
-
+    
+});
 bot.login(process.env.TOKEN);
-});        
+        
