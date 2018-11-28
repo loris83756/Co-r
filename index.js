@@ -29,17 +29,17 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "informations"){
-        message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
-        console.log("Commande effectué");
+        message.channel.sendMessage("_ Je suis  développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
+        console.log("Commande eff ectué");
     }
     
-    if (message.content === "Salut"){
+    if  message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
     }
 
-    case "ping":
-    message.channel.sendMessage('Pong: `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
+        case "ping":
+        message.channel.sendMessage('Pong: `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
    
 });
 
