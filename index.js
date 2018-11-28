@@ -5,7 +5,7 @@ var prefix = ("*")
 
 
 bot.on("guildMemberAdd" , member => {
-    member.guild.channels.find("name","nouveau-départ").send('Bienvenue ${member}')
+    member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue ${member}**`)
 })
 
 bot.on('ready',function() {
