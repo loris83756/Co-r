@@ -37,18 +37,10 @@ bot.on('message', message => {
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
     }
-
-   module.exports.run = async (bot, message, args) => {
-
-    message.channel.send("Pong: " + (Date.now() - message.createdTimestamp) + "ms");
-
-   }
-
-   module.exports.help = {
-       name: "ping"
-   }    
-
-
+    
+break;
+case "ping":
+message.channel.sendMessage('Pong:`' + `${message.vreatedTimestamp - Date.now()}` + ` ms`');
 
 });
 
