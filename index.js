@@ -30,7 +30,7 @@ bot.on('message', message => {
     
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-    message.content.send("**Les commandes vous ont etait envoyer en MP :bee: **")
+        message.content.send("**Les commandes vous ont etait envoyer en MP :bee: **")
     }
     
     if (message.content === prefix + "informations"){
