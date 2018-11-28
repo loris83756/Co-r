@@ -28,7 +28,7 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "informations"){
-        message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
+        message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku._" )
         console.log("Commande effectué");
     }
     
