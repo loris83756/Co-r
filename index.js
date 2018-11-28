@@ -38,7 +38,7 @@ bot.on('message', message => {
         console.log("Commande Salut effectué");
     }
     
-break;
+
 case "ping":
 message.channel.sendMessage('Pong:`' + `${message.vreatedTimestamp - Date.now()}` + ` ms`');
 
