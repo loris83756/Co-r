@@ -38,9 +38,9 @@ bot.on('message', message => {
         console.log("Commande Salut effectué");
     }
 
-   module.exports.run = async (bot,message, args) => {
+   module.exports.run = async (bot, message, args) => {
 
-    message.channel.send("Pong: " + (message.creaTimestamp - Date.now()) + "ms");
+    message.channel.send("Pong: " + (message.createdTimestamp - Date.now()) + "ms");
 
    }
 
