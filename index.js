@@ -33,7 +33,7 @@ bot.on('message', message => {
         console.log("Commande eff ectué");
     }
     
-    if  message.content === "Salut"){
+    if  (message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
     }
