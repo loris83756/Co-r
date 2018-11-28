@@ -4,9 +4,10 @@ const bot = new Discord.Client();
 var prefix = ("*")
 
 
-
-case "ping":
+bot.on('message', message => {
+    if (message.content === prefix + "ping"){
 message.channel.sendMessage('Pong: `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
+})
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ""nouveau").send(`**Bienvenue ${member}**`)
 })
