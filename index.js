@@ -8,6 +8,10 @@ bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue ${member}**`)
 })
 
+bot.on("guildMemberRemove" , member => {
+    member.guild.channels.find("name","nouveau-départ").send(`**${member} a quitté le serveur **`)
+})
+
 bot.on('ready',function() {
     bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
