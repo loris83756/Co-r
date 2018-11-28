@@ -25,14 +25,13 @@ bot.on('ready',function() {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){ 
-        message.author.send("**:bee:Liste des commandes**: \n ```*informations: (nouveau)``` Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` Donne le temps de réaction du bot en ms. \n \n ```*ban: (bientôt disponible)``` Permet de banir des personnes. \n \n ```*kick: (bientôt disponible)``` Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` Permet de mute des personnes. \n \n \n **:bee:Autres fonctionnalités:** \n ```salut``` dites Salut et le Bot vous dira Bonjour. \n \n ```**Bienvenue/a quitté le serveur``` Dès qu'une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:**Attention il faut posséder d'un salon nouveau/départ pour pouvoir avoir accès à cette fonctionnalité.**:exclamation: \n \n ```Auto role Membres``` \n Ajoute automatiquement le role **Membres** pour les nouveaux venu de votre serveur \n :exclamation:**Attention il faut posséder le role _Membre_**.")
+        message.author.send("**__:bee:Liste des commandes**:__ \n ```*informations: (nouveau)``` -Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` -Donne le temps de réaction du bot en ms. \n \n ```*ban: (bientôt disponible)``` -Permet de banir des personnes. \n \n ```*kick: (bientôt disponible)``` -Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` -Permet de mute des personnes. \n \n \n **__:bee:Autres fonctionnalités:__** \n ```salut``` -Dites Salut et le Bot vous dira Bonjour. \n \n ```**Bienvenue/a quitté le serveur``` -Dès qu'une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:**Attention il faut posséder d'un salon nouveau/départ pour pouvoir avoir accès à cette fonctionnalité.**:exclamation: \n \n ```Auto role Membres``` -Ajoute automatiquement le role **Membres** pour les nouveaux venu de votre serveur \n :exclamation:**Attention il faut posséder le role _Membre_**.")
         message.channel.sendMessage("**Les commandes vous on était envoyé en MP :bee: **")
     }
     
     if (message.content === prefix + "informations"){
         message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
         console.log("Commande effectué");
-    }
     
     if (message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
