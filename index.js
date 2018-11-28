@@ -39,8 +39,9 @@ bot.on('message', message => {
     }
     
 
-case "ping":
-message.channel.sendMessage('Pong:`' + `${message.vreatedTimestamp - Date.now()}` + ` ms`');
+
+    if "ping":
+    message.channel.sendMessage('Pong:`' + `${message.vreatedTimestamp - Date.now()}` + ` ms`');
 
 });
 
