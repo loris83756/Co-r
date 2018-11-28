@@ -38,8 +38,8 @@ bot.on('message', message => {
         console.log("Commande Salut effectué");
     }
 
-        case "ping":
-        message.channel.sendMessage('Pong: `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
+    case "ping":
+    message.channel.sendMessage('Pong: `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
    
 });
 
