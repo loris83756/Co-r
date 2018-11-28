@@ -25,7 +25,7 @@ bot.on('ready',function() {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){ 
-        message.author.send("**Liste des commandes**: \n ```*informations: (nouveau)``` Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` Donne le temps de réaction du bot en ms. \n \n ```*ban: (bientôt disponible)``` Permet de banir des personnes. \n \n ```*kick: (bientôt disponible)``` Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` Permet de mute des personnes. ")
+        message.author.send("**Liste des commandes**: \n ```*informations: (nouveau)``` Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` Donne le temps de réaction du bot en ms. \n \n ```*ban: (bientôt disponible)``` Permet de banir des personnes. \n \n ```*kick: (bientôt disponible)``` Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` Permet de mute des personnes. \n **Autres fonctionalitées:** \n Dites **Salut** et le bot vous repondra. \n \n **Bienvenue/a quitté le serveur** dés qu'une personne rejoindra votre serveur le bot lui shoutera la Bienvenue @...#0000 et a sont départ le bot dira @...#0000 a quitté le serveur.\n Attention il faut disposé d'un salon nouveau/départ pour pouvoir avoir accés a cette fonctionalité. ")
         message.channel.sendMessage("**Les commandes vous on était envoyé en MP :bee: **")
     }
     
