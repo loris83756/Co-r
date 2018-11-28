@@ -47,6 +47,6 @@ bot.on('message', message => {
         message.channel.sendMessage(`**Pong** ${message.createdTimestamp - Date.now()} ms`);
     }
     
-});
+};
 bot.login(process.env.TOKEN);
         
