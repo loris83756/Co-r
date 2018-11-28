@@ -5,11 +5,16 @@ var prefix = ("*")
 
 
 bot.on("guildMemberAdd" , member => {
-    member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue ${member}**`)
+    member.guild.channels.find("name","nouveau-départ""nouveau").send(`**Bienvenue ${member}**`)
 })
 
 bot.on("guildMemberRemove" , member => {
-    member.guild.channels.find("name","nouveau-départ").send(`**${member} a quitté le serveur **`)
+    member.guild.channels.find("name","nouveau-départ""départ").send(`**${member} a quitté le serveur **`)
+})
+
+bot.on(`guildMemberAdd`,member => {
+    var role = member.guild.roles.find(`name`, `Membres``BeeMembre`);
+    member.addRole(role)
 })
 
 bot.on('ready',function() {
