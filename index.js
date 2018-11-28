@@ -27,6 +27,9 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.author.send("**Liste des commandes**: \n ```*informations: (nouveau)``` Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` Donne le temps de réaction du bot en ms. \n \n ```*ban: (bientôt disponible)``` Permet de banir des personnes. \n \n ```*kick: (bientôt disponible)``` Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` Permet de mute des personnes. ")
     }
+bot.on('message', message => {
+    if (message.content === prefix + "help"){
+        message.channel.sendMessage("Les commandes vous on était envoyé en MP")
     
     if (message.content === prefix + "informations"){
         message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
