@@ -9,7 +9,7 @@ bot.on("guildMemberAdd" , member => {
 })
 
 bot.on("guildMemberRemove" , member => {
-    member.guild.channels.find("name","nouveau-départ").send(`**${member} a quitté le serveur **`)
+    member.guild.channels.find("name","nouveau-départ""départ").send(`**${member} a quitté le serveur **`)
 })
 
 bot.on(`guildMemberAdd`,member => {
@@ -29,20 +29,30 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "informations"){
-        message.channel.sendMessage("_ Je suis  développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
-        console.log("Commande eff ectué");
+        message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
+        console.log("Commande effectué");
     }
     
-    if  (message.content === "Salut"){
+    if (message.content === "Salut"){
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
     }
 
-    case "ping":
-    message.channel.sendMessage('Pong: `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
-   
+   module.exports.run = async (bot,message, args) => {
+
+    message.channel.send("Pong: " + (message.creaTimestamp - Date.now()) + "ms");
+
+   }
+
+   module.exports.help = {
+       name: "ping"
+   }    
+
+
+
 });
 
 bot.login(process.env.TOKEN);
+
 
         
