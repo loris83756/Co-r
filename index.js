@@ -4,6 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("*")
 
 
+break;
 case "ping":
 message.channel.sendMessage('Pong: `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
 bot.on("guildMemberAdd" , member => {
