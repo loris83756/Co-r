@@ -4,11 +4,9 @@ const bot = new Discord.Client();
 var prefix = ("*")
 
 
-bot.on('guildMemberAdd', member => { 
-bot.channels.get("nouveau-départ").send(`Bienvenue ${member}`)
-});
-
-    
+bot.on("guildMemberAdd" , member => {
+    member.guild.channels.find("name","nouveau-départ").send('Bienvenue ${member}')
+})
 
 bot.on('ready',function() {
     bot.user.setGame("Commande: *help");
