@@ -40,7 +40,7 @@ bot.on('message', message => {
     
 
 
-    if "ping":
+    if (message.content === prfix + "ping"){
     message.channel.sendMessage('Pong:`' + `${message.vreatedTimestamp - Date.now()}` + ` ms`');
 
 });
