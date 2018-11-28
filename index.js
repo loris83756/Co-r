@@ -3,6 +3,11 @@ const bot = new Discord.Client();
 
 var prefix = ("*")
 
+
+bot.on("guildMemberAdd" , member => {
+    member.guild.channels.find("name","nouveau-départ").send('Bienvenue ${member}')
+})
+
 bot.on('ready',function() {
     bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
@@ -25,5 +30,3 @@ bot.on('message', message => {
     }
 });
 bot.login(process.env.TOKEN);
-
-
