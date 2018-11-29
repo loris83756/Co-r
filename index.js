@@ -31,7 +31,7 @@ bot.on('message', message => {
     .setColor("0x#FF80000")
 message.channel.sendEmbed(embed);
 }
-        message.channel.sendMessage("**Les commandes vous on était envoyé en MP :bee: **"):"
+        message.channel.sendMessage("**Les commandes vous on était envoyé en MP :bee: **");
     }
     
     if (message.content === prefix + "informations"){
