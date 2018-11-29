@@ -28,7 +28,7 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
     .setTitle("**__:bee:Liste des commandes__**:")
     .setDescription("\n ```*informations: (nouveau)``` :black_small_square:Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` :black_small_square:Donne le temps de réaction du bot en ms. \n \n ```*serveur (nouveau)``` :black_small_square:Donne la liste de tous les serveur ou se trouve Beeing#4440 \n \n ```*ban: (bientôt disponible)``` :black_small_square:Permet de bannir des personnes. \n \n ```*kick: (bientôt disponible)``` :black_small_square:Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` :black_small_square:Permet de mute des personnes. \n \n \n **__:bee:Autres fonctionnalités:__** \n ```salut``` :black_small_square:Dites Salut et le Bot vous dira Bonjour. \n \n ```Bienvenue/a quitté le serveur``` :black_small_square:Dès qu'une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:**Attention il faut posséder un salon nouveau/départ pour pouvoir avoir accès à cette fonctionnalité.**:exclamation: \n \n ```Auto role Membres``` :black_small_square:Ajoute automatiquement le role **Membres** a tout les nouveaux de votre serveur \n :exclamation:**Attention il faut posséder le role _Membres_.**:exclamation:")
-    .setColor("0x#FEED00)
+    .setColor("0x#FF80000")
 message.channel.sendEmbed(embed);
 }
         message.channel.sendMessage("**Les commandes vous on était envoyé en MP :bee: **")n:"
