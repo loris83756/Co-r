@@ -39,6 +39,9 @@ bot.on('message', message => {
         console.log("Commande Salut effectué");
     }
     
+     if (message.content === prefix + "serveurs"){
+        message.channel.sendMessage(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`))
+    }
 
 
     if (message.content === prefix + "ping"){
