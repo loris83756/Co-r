@@ -52,6 +52,7 @@ bot.on('message', message => {
       let command = message.content.split("")[0];
       const args = message.content.splice(prefix.length).split(/ +/);
       command = args.shift().toLowerCase();
+    }
 
       if (message.content === prefix + "kick") {
           let modRole = message.guild.roles.find("name", "Test");
