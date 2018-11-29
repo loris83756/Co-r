@@ -30,7 +30,7 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "informations"){
-        message.channel.sendMessage("_ ```Je suis programmé par **loris83756#3705** en **JavaScript** et je suis hébergé chez **Heroku**. \n Beeing#4440 est sous licence ISC .```
+        message.channel.sendMessage("_ ```Je suis programmé par **loris83756#3705** en **JavaScript** et je suis hébergé chez **Heroku**. \n Beeing#4440 est sous licence ISC .```")
         console.log("Commande effectué");
     }
     
