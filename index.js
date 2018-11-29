@@ -48,30 +48,6 @@ bot.on('message', message => {
         message.channel.sendMessage(`**Pong:** ${message.createdTimestamp - Date.now()} ms`);
     }
     
-bot.on('message', message => {
-      let command = message.content.split("")[0];
-      const args = message.content.splice(prefix.length).split(/ +/);
-      command = args.shift().toLowerCase();
-
-      if (command === "kick") {
-          let modRole = message.guild.roles.find("name", "ADMIBEESTRATEUR");
-          if(message.member.roles.has(modRole.id)) {
-              return messge.reply("**Tu n'as pas la permission d'effectué cette commande**.").catch(console.error);
-          }
-          if(message.mentions.users.size === 0) {
-              return message.reply("Vous devez mentionner l'utilisateur à expulser.").catch(console.error);
-          }
-          let kickMember = message.guild.member(message.mentions.user.first());
-          if(!kickMember) {
-              return message.reply("**Cet utilisateur est introuvable ou ne peut être expulser.**")
-          }
-          if(!message.guild.member(bot.user).hasPermission("KICK_MEMBERS")) {
-              return message.reply("**Il me faut la permission __KICK_MEMBERS__ pour pouvoir effectué cette commande.**").catch(console.error);
-          }
-          kickMember.kick().then(member => {
-              message.reply(`**${member.user.username} a bien été expulser.**`).catch(console.error);
-          }).catch(console.error)
-              
 });
 bot.login(process.env.TOKEN);
 
