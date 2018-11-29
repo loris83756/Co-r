@@ -21,14 +21,16 @@ bot.on('ready',function() {
     bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
 });
+
+
 bot.on('message', message => {
     if (message.content === prefix + "help"){ 
-        message.author.send("**__:bee:Liste des commandes__**: \n ```*informations: (nouveau)``` :black_small_square:Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` :black_small_square:Donne le temps de réaction du bot en ms. \n \n ```*ban: (bientôt disponible)``` :black_small_square:Permet de bannir des personnes. \n \n ```*kick: (bientôt disponible)``` :black_small_square:Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` :black_small_square:Permet de mute des personnes. \n \n \n **__:bee:Autres fonctionnalités:__** \n ```salut``` :black_small_square:Dites Salut et le Bot vous dira Bonjour. \n \n ```Bienvenue/a quitté le serveur``` :black_small_square:Dès qu'une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:**Attention il faut posséder un salon nouveau/départ pour pouvoir avoir accès à cette fonctionnalité.**:exclamation: \n \n ```Auto role Membres``` :black_small_square:Ajoute automatiquement le role **Membres** a tout les nouveaux de votre serveur \n :exclamation:**Attention il faut posséder le role _Membres_.**:exclamation:")
+        message.author.send("**Liste des commandes**: \n ```*informations: (nouveau)``` Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` Donne le temps de réaction du bot en ms. \n \n ```*ban: (bientôt disponible)``` Permet de banir des personnes. \n \n ```*kick: (bientôt disponible)``` Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` Permet de mute des personnes. \n \n **Autres fonctionalitées:** \n ```**Salut**``` Dites Salut et le bot vous dira Bonjour. \n \n ```**Bienvenue/a quitté le serveur**``` Dés qu'une personne rejoindra votre serveur le bot lui shoutera la Bienvenue et a sont départ le bot dira @...#0000 a quitté le serveur.\n Attention il faut posséder d'un salon nouveau/départ pour pouvoir avoir accés a cette fonctionalité. ")
         message.channel.sendMessage("**Les commandes vous on était envoyé en MP :bee: **")
     }
     
     if (message.content === prefix + "informations"){
-        message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku._" )
+        message.channel.sendMessage("_ Je suis développer par loris83756#3705 et je suis hébergé chez Heroku. \n **Serveur officiel: https://discord.gg/WFDfbZm_" )
         console.log("Commande effectué");
     }
     
@@ -36,11 +38,14 @@ bot.on('message', message => {
         message.reply("Bien le bonjour. :)");
         console.log("Commande Salut effectué");
     }
+    
+
 
     if (message.content === prefix + "ping"){
         message.channel.sendMessage(`**Pong:** ${message.createdTimestamp - Date.now()} ms`);
-    }    
+    }
     
-});    
-bot.login(process.env.TOKEN);{
-        
+});
+bot.login(process.env.TOKEN);
+
+
