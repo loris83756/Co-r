@@ -40,7 +40,9 @@ bot.on('message', message => {
     if (message.content === prefix + "ping"){
         message.channel.sendMessage(`**Pong:** ${message.createdTimestamp - Date.now()} ms`);
     }    
-       
+    
+    if (message.content === prefix +"serverlist"){
+        message.channel.send(bot.guilds.map(r => r.name + ` | **${memberCount}** members`))
 });    
-bot.login(process.env.TOKEN);
+bot.login(process.env.TOKEN);{
         
