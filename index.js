@@ -41,7 +41,7 @@ bot.on('message', message => {
         message.channel.sendMessage(`**Pong:** ${message.createdTimestamp - Date.now()} ms`);
     }    
     
-    if (message.content === prefix +"serveurs"){
+    if (message.content === prefix + "serveurs"){
         message.channel.sendMessage(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`))
     }
     
