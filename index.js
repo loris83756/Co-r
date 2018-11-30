@@ -46,16 +46,6 @@ bot.on('message', message => {
 
     if (message.content === prefix + "ping"){
         message.channel.sendMessage(`**Pong:** ${message.createdTimestamp - Date.now()} ms`);
-    }
     
-    if (message.content === prefix + "infoserveur"){
-        var embed = new Discord.RichEmbed()
-        .setDescription("**Informations du serveur**")
-        .setField("**Nom du serveur:**", message.guild.name)
-        .setField("**Serveur créé le :**", message.guild.createdAT)
-        .setField("**Tu a rejoin le serveur le:**", message.member.joinAT
-        .setField("**Utilisateurs sur le serveur:**", message.guild.memberCount) {
-   message.channel.sendEmbed(embed)
-        
 });
 bot.login(process.env.TOKEN);
