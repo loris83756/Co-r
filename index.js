@@ -55,7 +55,7 @@ bot.on('message', message => {
         .setField("**Serveur créé le :**", message.guild.createdAT)
         .setField("**Tu a rejoin le serveur le:**",message.member.joinAT
         .setField("**Utilisateurs sur le serveur:**",message.guild.memberCount)
-        .setColor("0x0000FF)
+        .setColor("0x0000FF")
    message.channel.sendEmbed(embed)
         
 });
