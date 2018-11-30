@@ -53,8 +53,8 @@ bot.on('message', message => {
         .setDescription("**Informations du serveur**")
         .setField("**Nom du serveur:**", message.guild.name)
         .setField("**Serveur créé le :**", message.guild.createdAT)
-        .setField("**Tu a rejoin le serveur le:**",message.member.joinAT
-        .setField("**Utilisateurs sur le serveur:**",message.guild.memberCount)
+        .setField("**Tu a rejoin le serveur le:**", message.member.joinAT
+        .setField("**Utilisateurs sur le serveur:**", message.guild.memberCount)
    message.channel.sendEmbed(embed)
         
 });
