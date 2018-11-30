@@ -19,7 +19,7 @@ bot.on(`guildMemberAdd`,member => {
 })
 
 bot.on('ready',function() {
-    bot.user.setGame(":snowflake:Commande: *help");
+    bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
 });
 
