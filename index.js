@@ -46,7 +46,7 @@ bot.on('message', message => {
 
 
     if (message.content === prefix + "ping"){
-        message.channel.sendMessage(`**:snowflake:Pong:** ${message.createdTimestamp = Date.now()} ms`);
+        message.channel.sendMessage(`**:snowflake:Pong:** ${message.createdTimestamp -*1 Date.now()} ms`);
     }
     
 });
