@@ -44,10 +44,10 @@ bot.on('message', message => {
         message.channel.sendMessage(bot.guilds.map(r => r.name + ` :snowflake: **${r.memberCount}** membres`))
     }
 
-
-    if (message.content === prefix + "ping"){
-        message.channel.sendMessage(` **:snowflake:Pong:** `' + `${message.createdTimestamp - Date.now()} `+ ' ms `');
+     if (message.content === prefix + "ping"){
+        message.channel.sendMessage(`**:snowflake:Pong:** ${message.createdTimestamp - Date.now()} ms`);}
     }
+   
     
 });
 bot.login(process.env.TOKEN);
