@@ -47,7 +47,10 @@ bot.on('message', message => {
      if (message.content === prefix + "ping"){
          message.channel.sendMessage(`**:snowflake:Pong:** ${message.createdTimestamp - Date.now()} ms`);
     }
-   
+  
+     if (message.content === prefix + "rainbow"){
+         message.channel.sendMessage(`file:///C:/Users/loris/Pictures/Multi_Color_Bar.gif`);
+    } 
     
 });
 bot.login(process.env.TOKEN);
