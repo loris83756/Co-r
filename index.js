@@ -49,7 +49,7 @@ bot.on('message', message => {
     }
   
      if (message.content === prefix + "rainbow"){
-         message.channel.sendMessage(`file:///C:/Users/loris/Pictures/Multi_Color_Bar.gif`);
+         message.channel.sendMessage(`https://discordapp.com/channels/393828385383776256/511134340999020544/521731045523980300`);
     } 
     
 });
