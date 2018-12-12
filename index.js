@@ -52,9 +52,8 @@ bot.on('message', message => {
         message.channel.sendMessage(`**Arret en cours ...**`);
     }
     
-    if(message.content === prefix + "rainbow"){
-        let embed = new Discord.MessageEmbed()
-        .setColor('GREEN');
+    if(message.content === prefix + "avatar"){
+         message.reply(message.author.avatarURL)
     }
     
 });
