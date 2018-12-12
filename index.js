@@ -48,5 +48,8 @@ bot.on('message', message => {
         message.channel.sendMessage(`Pong: ${message.createdTimestamp - Date.now()} ms`);
     }
     
+    if(message.content === prefix +"off"){
+        message.channel.sendMessage(`**Arret en cours ...**`);
+        bot.off
 });
 bot.login(process.env.TOKEN);
