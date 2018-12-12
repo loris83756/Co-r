@@ -51,7 +51,6 @@ bot.on('message', message => {
     bot.off('message', message => {
     if(message.content === prefix +"off"){
         message.channel.sendMessage(`**Arret en cours ...**`);
-       
     }
     
 });
