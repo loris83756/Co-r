@@ -51,5 +51,7 @@ bot.on('message', message => {
     if(message.content === prefix +"off"){
         message.channel.sendMessage(`**Arret en cours ...**`);
         bot.off
+    }
+    
 });
 bot.login(process.env.TOKEN);
