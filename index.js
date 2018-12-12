@@ -53,7 +53,7 @@ bot.on('message', message => {
     }
     
     if(message.content === prefix + "avatar"){
-        message.mention.user(message.user.avatarURL)
+        message.mention.users(message.user.avatarURL)
     }
     
 });
