@@ -53,7 +53,7 @@ bot.on('message', message => {
     }
     
     if(message.content === prefix + "avatar"){
-      message.reply(message.random.avatarURL)
+      message.channelsendMessage(`**Voici ton avatar**`message.author.avatarURL)
     }
     
 });
