@@ -52,7 +52,8 @@ bot.on('message', message => {
         message.channel.sendMessage(`**Arret en cours ...**`);
     }
     
-    if(message.content === prefix + "avatar" ${user}){
+    if(message.content === prefix + "avatar"){
+        if (!member)
          message.reply(message.user.avatarURL)
     }
     
