@@ -48,9 +48,14 @@ bot.on('message', message => {
         message.channel.sendMessage(`Pong: ${message.createdTimestamp - Date.now()} ms`);
     }
     
-    bot.off('message', message => {
     if(message.content === prefix +"off"){
         message.channel.sendMessage(`**Arret en cours ...**`);
+    }
+    
+    if(message.content === prefix + "rainbow"){
+        embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/513297233941233674/519453967093334018/Multi_Color_Bar.gif", color=0xffff00)
+embed.set_footer(text="Rainbow")
+await self.bot.say(embed=embed)
     }
     
 });
