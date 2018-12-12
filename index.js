@@ -53,7 +53,7 @@ bot.on('message', message => {
     }
     
     if(message.content === prefix + "rainbow"){
-        let embed = new Discord.MessageEmbed
+        let embed = new Discord.MessageEmbed()
         .setColor('GREEN');
     }
     
