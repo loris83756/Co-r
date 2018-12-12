@@ -53,9 +53,8 @@ bot.on('message', message => {
     }
     
     if(message.content === prefix + "rainbow"){
-        let embed = new Discord.MessageEmbed()
-  .setAuthor('**Rainbow**', message.author.displayAvatarURL())
-  .setColor('GREEN');
+        let embed = new Discord.MessageEmbed
+        .setColor('GREEN');
     }
     
 });
