@@ -56,5 +56,9 @@ bot.on('message', message => {
       message.channel.sendMessage(message.author.avatarURL);
     }
     
+    if(message.content === prefix + "pied"){
+        message.channel.sendMessage("Les pieds de tata sont moches");
+    }
+       
 });
 bot.login(process.env.TOKEN);
