@@ -49,8 +49,7 @@ bot.on('message', message => {
     }
     
     if(message.content === prefix +"off"){
-      message.channel.sendMessage(`**Arret en cours ...**`);
-        ooooooffffffcraaaasssshhhhh
+      message.channel.sendMessage(`**Arret en cours ...**`)
     }
     
     if(message.content === prefix + "avatar" + user){
