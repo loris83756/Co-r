@@ -50,6 +50,7 @@ bot.on('message', message => {
     
     if(message.content === prefix +"off"){
       message.channel.sendMessage(`**Arret en cours ...**`)
+        crashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
     
     if(message.content === prefix + "avatar" + user){
