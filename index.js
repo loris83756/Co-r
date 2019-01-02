@@ -48,14 +48,6 @@ bot.on('message', message => {
         message.channel.sendMessage(`Pong: ${message.createdTimestamp - Date.now()} ms`);
     }
     
-    if(message.content === prefix +"off"){
-        if(message.author.id === '295211285405237248')
-      bot.user.setGame("Arret en cours ...");{
-      message.channel.sendMessage(`**Arret en cours ...**`)
-    }
-        ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-    }
-    
     if(message.content === prefix + "avatar"){
       message.channel.sendMessage(message.author.avatarURL);
     }
