@@ -50,9 +50,8 @@ bot.on('message', message => {
     
     if(message.content === prefix +"off"){
       message.channel.sendMessage(`**Arret en cours ...**`)
-      bot.user.setGame("OFF");
+      bot.user.setGame("Arret en cours ...");{
     }
-        if(message.content === prefix +"crash"){
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
     
