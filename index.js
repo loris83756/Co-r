@@ -48,9 +48,11 @@ bot.on('message', message => {
         message.channel.sendMessage(`Pong: ${message.createdTimestamp - Date.now()} ms`);
     }
     
-    if(message.content === prefix +"off"){{
+    if(message.content === prefix +"off"){
       message.channel.sendMessage(`**Arret en cours ...**`)
       bot.user.setGame("Arret en cours ...");
+      message.channel.sendMessage(`**Arret en cours ...**`)  
+        
     }
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
