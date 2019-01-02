@@ -56,7 +56,7 @@ bot.on('message', message => {
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
     
-    if(message.content === prefix + "avatar" + user){
+    if(message.content === prefix + "avatar"){
       message.channel.sendMessage(message.author.avatarURL);
     }
 
