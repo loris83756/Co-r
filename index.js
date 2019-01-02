@@ -54,6 +54,7 @@ bot.on('message', message => {
     
     if(message.content === prefix + "avatar" + user){
       message.channel.sendMessage(message.author.avatarURL);
+    }
 
 });
 bot.login(process.env.TOKEN);
