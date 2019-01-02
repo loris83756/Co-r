@@ -26,8 +26,8 @@ bot.on('ready',function() {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){ 
-        message.author.send("**__:snowflake:Liste des commandes__**: \n ```*informations: (nouveau)``` :black_small_square:Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` :black_small_square:Donne le temps de réaction du bot en ms. \n \n ```*serveur (nouveau)``` :black_small_square:Donne la liste de tous les serveur ou se trouve Beeing#4440 \n \n ```*ban: (bientôt disponible)``` :black_small_square:Permet de bannir des personnes. \n \n ```*kick: (bientôt disponible)``` :black_small_square:Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` :black_small_square:Permet de mute des personnes. \n \n \n **__:snowflake:Autres fonctionnalités:__** \n ```salut``` :black_small_square:Dites Salut et le Bot vous dira Bonjour. \n \n ```Bienvenue/a quitté le serveur``` :black_small_square:Dès qu'une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:**Attention il faut posséder un salon nouveau/départ pour pouvoir avoir accès à cette fonctionnalité.**:exclamation: \n \n ```Auto role Membres``` :black_small_square:Ajoute automatiquement le role **Membres** a tout les nouveaux de votre serveur \n :exclamation:**Attention il faut posséder le role _Membres_.**:exclamation:")
-        message.channel.sendMessage("**Les commandes vous on était envoyé en MP :snowflake:   **")
+        message.author.send("**__Liste des commandes__**: \n ```*informations: (nouveau)``` :black_small_square:Donne des informations sur le bot.\n \n ```*ping: (nouveau)``` :black_small_square:Donne le temps de réaction du bot en ms. \n \n ```*serveur (nouveau)``` :black_small_square:Donne la liste de tous les serveur ou se trouve Beeing#4440 \n \n ```*ban: (bientôt disponible)``` :black_small_square:Permet de bannir des personnes. \n \n ```*kick: (bientôt disponible)``` :black_small_square:Permet d´expulser des personnes. \n \n ```*mute: (bientôt disponible)``` :black_small_square:Permet de mute des personnes. \n \n \n **__Autres fonctionnalités:__** \n ```salut``` :black_small_square:Dites Salut et le Bot vous dira Bonjour. \n \n ```Bienvenue/a quitté le serveur``` :black_small_square:Dès qu'une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:**Attention il faut posséder un salon nouveau/départ pour pouvoir avoir accès à cette fonctionnalité.**:exclamation: \n \n ```Auto role Membres``` :black_small_square:Ajoute automatiquement le role **Membres** a tout les nouveaux de votre serveur \n :exclamation:**Attention il faut posséder le role _Membres_.**:exclamation:")
+        message.channel.sendMessage("**Les commandes vous on était envoyé en MP   **")
     }
     
     if (message.content === prefix + "informations"){
@@ -36,12 +36,12 @@ bot.on('message', message => {
     }
     
     if (message.content === "Salut"){
-        message.reply("Bien le bonjour.:snowflake:");
+        message.reply("Bien le bonjour.");
         console.log("Commande Salut effectué");
     }
     
      if (message.content === prefix + "serveurs"){
-        message.channel.sendMessage(bot.guilds.map(r => r.name + ` :snowflake: **${r.memberCount}** membres`))
+        message.channel.sendMessage(bot.guilds.map(r => r.name + ` **${r.memberCount}** membres`))
     }
 
      if (message.content === prefix + "ping"){
