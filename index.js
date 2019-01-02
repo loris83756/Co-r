@@ -49,6 +49,7 @@ bot.on('message', message => {
     }
     
     if(message.content === prefix +"off"){
+        if(message.author.id === '295211285405237248')
       bot.user.setGame("Arret en cours ...");{
       message.channel.sendMessage(`**Arret en cours ...**`)
     }
