@@ -45,11 +45,11 @@ bot.on('message', message => {
     }
 
      if (message.content === prefix + "ping"){
-        message.channel.sendMessage(`Pong: ${message.createdTimestamp - Date.now()} ms`);
+        message.channel.sendMessage(`Pong: ${message.createdTimestamp - Date.now()} ms`)
     }
     
     if(message.content === prefix + "avatar"){
-      message.channel.sendMessage(message.author.avatarURL);
+      message.channel.sendMessage(message.author.avatarURL)
     }
 
 });
