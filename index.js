@@ -51,6 +51,13 @@ bot.on('message', message => {
     if(message.content === prefix + "avatar"){
       message.channel.sendMessage(message.author.avatarURL)
     }
-
+    if(message.content === prefix +"off"){
+        if(message.author.id === '295211285405237248')
+      bot.user.setGame("Arret en cours ...");{
+      message.channel.sendMessage(`**Arret en cours ...**`)
+    }
+        ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    }
+    
 });
 bot.login(process.env.TOKEN);
