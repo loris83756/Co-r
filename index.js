@@ -54,7 +54,7 @@ bot.on('message', message => {
     
     if(message.content === prefix +"off"){
       message.channel.sendMessage("**Seul loris83756#0001 peut éffectuer cette commande**")
-        if(message.author.id === '295211285405237248')
+        if(message.author.id === '4515445454425552')
           message.channel.sendMessage(`**Arret en cours ...**`) 
       bot.user.setGame("Arret en cours ...");{
     }
