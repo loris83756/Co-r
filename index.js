@@ -19,7 +19,6 @@ bot.on(`guildMemberAdd`,member => {
 })
 
 bot.on('ready',function() {
-    bot.user.setGame("Bonjour");
     bot.user.setGame("Commande: *help");
     console.log ("Connectedç");
 });
@@ -42,7 +41,7 @@ bot.on('message', message => {
     }
     
      if (message.content === prefix + "serveurs"){
-        message.channel.sendMessage(bot.guilds.map(r => r.name + ` **${r.memberCount}** membres`))
+        message.channel.sendMessage(bot.guilds.map(r => r.name + `|**${r.memberCount}** membres`))
     }
 
      if (message.content === prefix + "ping"){
