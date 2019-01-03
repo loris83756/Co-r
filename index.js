@@ -50,6 +50,7 @@ bot.on('message', message => {
     
     if (message.content === prefix + "invitation"){
         message.channel.sendMessage("**Voici le lien pour m'inviter sur ton serveur:** https://discordapp.com/api/oauth2/authorize?client_id=515518385686183937&permissions=0&scope=bot")
+    }
     
     if (message.content === prefix + "avatar"){
       message.channel.sendMessage(message.author.avatarURL)
