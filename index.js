@@ -41,7 +41,7 @@ bot.on('message', message => {
     }
     
      if (message.content === prefix + "serveurs"){
-        message.channel.sendMessage(bot.guilds.map(r => r.name + `|**${r.memberCount}** membres`))
+        message.channel.sendMessage(bot.guilds.map(r => r.name + ` |**${r.memberCount}** membres`))
     }
 
      if (message.content === prefix + "ping"){
