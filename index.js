@@ -70,5 +70,5 @@ bot.on('message', message => {
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
         
-});   
+};   
 bot.login(process.env.TOKEN);
