@@ -65,10 +65,13 @@ bot.on('message', message => {
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
     
-   if (message.content === prefix + "joinvocal"){ 
-      voiceChannel.join()
-    .then(connection => 
-  }
+if (message.content === prefix + "joinvocale"){
+    message.member.voiceChannel
+    message.guild.voiceConnection
+    message.member.voiceChannel.join()
+    .then(connection =>{
+        message.reply("J'ai bien rejoin le vocal");
+    }})
     
 });
 bot.login(process.env.TOKEN);
