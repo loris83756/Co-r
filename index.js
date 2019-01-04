@@ -4,11 +4,6 @@ const bot = new Discord.Client();
 
 var prefix = ("*")
 
-bot.on voiceChannel.join()
-  .then(connection => {
-    message.reply("J'ai bien rejoin le vocal")
-}
-
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue** ${member}`)
 })
@@ -60,13 +55,21 @@ bot.on('message', message => {
       message.channel.sendMessage(message.author.avatarURL)
     }
     
-    if (message.content === prefix +"off"){
+    if (message.content === prefix + "off"){
         message.channel.sendMessage(`**Seul loris83756#0001 peut utiliser cette commande.**`)
        if (message.author.id === '295211285405237248')
           message.channel.sendMessage(`**Arret en cours ...**`) 
       bot.user.setGame("Arret en cours ...");{
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
-   
+        
+   if (message.content === prefix + "join") {
+    if (message.member.voice.channel) {
+      const connection = await message.member.voice.channel.join();
+    } else {
+      message.reply('**Tu doit d'abbord rejoindre un salon vocal.**');
+    }
+  }
+        
 });
 bot.login(process.env.TOKEN);
