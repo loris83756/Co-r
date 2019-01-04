@@ -67,8 +67,6 @@ bot.on('message', message => {
     
    if (message.content === prefix + "joinvocale"){ 
     voiceChannel.join()
-  .then(connection => {
-
   }
     
 });
