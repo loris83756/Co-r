@@ -65,7 +65,7 @@ bot.on('message', message => {
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
     
-   if (message.content === prefix + "joinvocale"){ 
+   if (message.content === prefix + "joinvocal"){ 
     voiceChannel.join()
   }
     
