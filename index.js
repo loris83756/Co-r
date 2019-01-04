@@ -67,7 +67,7 @@ bot.on('message', message => {
     if (message.member.voice.channel) {
       const connection = message.member.voice.channel.join();
     } else {
-      message.reply('**Tu doit d'abbord rejoindre un salon vocal.**');
+      message.reply("**Tu doit d'abbord rejoindre un salon vocal.**");
     }
   }
         
