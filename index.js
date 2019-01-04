@@ -58,8 +58,9 @@ bot.on('message', message => {
        if (message.author.id === '295211285405237248')
           message.channel.sendMessage(`**Arret en cours ...**`) 
       bot.user.setGame("Arret en cours ...");{
+      }
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
         
-};   
+}); 
 bot.login(process.env.TOKEN);
