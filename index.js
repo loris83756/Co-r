@@ -71,7 +71,7 @@ if (message.content === prefix + "joinvocale"){
     message.member.voiceChannel.join()
     .then(connection =>{
         message.reply("J'ai bien rejoin le vocal");
-    }})
+    })
     
 });
 bot.login(process.env.TOKEN);
