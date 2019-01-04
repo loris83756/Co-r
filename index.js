@@ -4,6 +4,10 @@ const bot = new Discord.Client();
 
 var prefix = ("*")
 
+bot.on voiceChannel.join()
+  .then(connection => {
+    message.reply("J'ai bien rejoin le vocal")
+}
 
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue** ${member}`)
@@ -63,13 +67,6 @@ bot.on('message', message => {
       bot.user.setGame("Arret en cours ...");{
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
-    
-if (message.content === prefix + "joinvocale"){
-    }
-    message.member.voiceChannel.join()
-    .then(connection =>{
-        message.reply("J'ai bien rejoin le vocal");
-    }
-    
+   
 });
 bot.login(process.env.TOKEN);
