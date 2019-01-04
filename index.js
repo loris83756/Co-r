@@ -2,15 +2,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("*")
-
- channel = client.channels.find('name', 'Musique');
-
-  channel.join()
-  .then(connection => console.log('Connected'))
-  .catch(console.error);
-})
-
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue** ${member}`)
 })
