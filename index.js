@@ -69,7 +69,7 @@ bot.on('message', message => {
     voiceChannel.join()
   .then(connection => {
 
-  }}
+  }
     
 });
 bot.login(process.env.TOKEN);
