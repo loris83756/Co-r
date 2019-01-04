@@ -66,7 +66,7 @@ bot.on('message', message => {
     }
     
    if (message.content === prefix + "joinvocal"){ 
-      voiceChannel.join(":loud_sound:General")
+      voiceChannel.join()
     .then(connection => 
   }
     
