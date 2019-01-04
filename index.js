@@ -4,6 +4,13 @@ const bot = new Discord.Client();
 
 var prefix = ("*")
 
+ channel = client.channels.find('name', 'Musique');
+
+  channel.join()
+  .then(connection => console.log('Connected'))
+  .catch(console.error);
+})
+
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue** ${member}`)
 })
@@ -63,13 +70,5 @@ bot.on('message', message => {
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
         
-if (message.content === prefix + "join") {
-    const channel = message.member.voiceChannel;
-
-    channel.join()
-    .then(connection => console.log('Connected'))
-    .catch(console.error);
-  }
-});
-    
+});   
 bot.login(process.env.TOKEN);
