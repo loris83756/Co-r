@@ -63,12 +63,13 @@ bot.on('message', message => {
         ccrashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
         
-   if (message.content === prefix + "join") {
-    if (message.member.voice.channel) {
-      const connection = message.member.voice.channel.join();
-    } else {
-      message.reply("**Tu doit d'abbord rejoindre un salon vocal.**");
-    }
-  }    
+if (message.content === prefix + "join") {
+    const channel = message.member.voiceChannel;
+
+    channel.join()
+    .then(connection => console.log('Connected'))
+    .catch(console.error);
+  }
 });
+    
 bot.login(process.env.TOKEN);
