@@ -69,7 +69,6 @@ bot.on('message', message => {
     } else {
       message.reply("**Tu doit d'abbord rejoindre un salon vocal.**");
     }
-  }
-        
+  }    
 });
 bot.login(process.env.TOKEN);
