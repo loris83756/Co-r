@@ -89,6 +89,7 @@ if (message.content === prefix + "help") {
         .addField(`**Voici ton avatar:**`,`(message.author.avatarURL)`)
         .setColor(0xffa500)
         .setFooter("Beeing")
+        message.channel.send(embed);
     }
     
 }); 
