@@ -86,7 +86,8 @@ if (message.content === prefix + "help") {
     
     if (message.content === prefix + "avatar") {
         const embed = new RichEmbed()
-        .addField(`**Voici ton avatar:**`,`message.author.avatarURL`)
+        .setTitle(`**Voici ton avatar:**`)
+        .addImage(`message.author.avatarURL`)
         .setColor(0xffa500)
         .setFooter("Beeing")
         message.channel.send(embed);
