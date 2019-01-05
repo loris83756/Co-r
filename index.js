@@ -40,7 +40,8 @@ if (message.content === prefix + "help") {
       .addField(`Bienvenue/a quitté le serveur`,`:small_orange_diamond: Dès qu une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:Attention il faut posséder un salon nouveau-départ pour pouvoir avoir accès à cette fonctionnalité.:exclamation:`)
       .addField(`Auto rôle Membres `,`:small_orange_diamond:Ajoute automatiquement le rôle Membres a tout les nouveaux de votre serveur. \n :exclamation: Attention il faut posséder le rôle Membres.:exclamation:`)
       .setColor(0xffa500)
-      .setFooter("Beeing")
+      .setTimestamp()
+      .setFooter("Beeing","https://discordapp.com/channels/393828385383776256/511129543768145930/531220473665814539")
     message.author.send(embed);
   }
     
@@ -48,7 +49,8 @@ if (message.content === prefix + "help") {
      const embed = new RichEmbed()
       .setTitle('Les commandes vous ont été envoyés en MP :mailbox_with_mail:')
       .setColor(0xffa500)
-      .setFooter("Beeing")
+      .setTimestamp()
+      .setFooter("Beeing","https://discordapp.com/channels/393828385383776256/511129543768145930/531220473665814539")
      message.channel.send(embed)
     }
     
@@ -88,7 +90,7 @@ if (message.content === prefix + "help") {
     
     if (message.content === prefix + "avatar") {
         const embed = new RichEmbed()
-        .addField(`**~~Voici ton avatar:~~**`,`**:tools: EN MAINTENANCE DESOLER POUR LA GENE OCASIONE :( :tools:`)
+        .addField(`**~~Voici ton avatar:~~**`,`tools: ** EN MAINTENANCE DESOLER POUR LA GENE OCASIONE :( **:tools:`)
         .setColor(0xffa500)
         .setFooter("Beeing")
         message.channel.send(embed);
