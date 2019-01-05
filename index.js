@@ -84,8 +84,11 @@ if (message.content === prefix + "help") {
      message.channel.send(embed);
     }
     
-    if (message.content === prefix + "avatar"){
-      message.channel.sendMessage(message.author.avatarURL)
+    if (message.content === prefix + "avatar") {
+        const embed = new RichEmbed()
+        .addField(`**Voici ton avatar:**`,`(message.author.avatarURL)`)
+        .setColor(0xffa500)
+        .setFooter("Beeing")
     }
     
 }); 
