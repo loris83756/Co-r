@@ -44,7 +44,7 @@ bot.on('message', message => {
     }
 
      if (message.content === prefix + "ping"){
-        message.channel.sendMessage(`:ping_pong:Pong: ${message.createdTimestamp - Date.now()} ms`)
+        message.channel.sendMessage(`:ping_pong: Pong: ${bot.ping} ms`)
     }
     
     if (message.content === prefix + "invitation"){
