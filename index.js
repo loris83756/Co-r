@@ -88,7 +88,7 @@ if (message.content === prefix + "help") {
     
     if (message.content === prefix + "avatar") {
         const embed = new RichEmbed()
-        .addField(`**Voici ton avatar:**`,`**:tools: EN MAINTENANCE DESOLER POUR LA GENE OCASIONE :( :tools:`)
+        .addField(`**~~Voici ton avatar:~~**`,`**:tools: EN MAINTENANCE DESOLER POUR LA GENE OCASIONE :( :tools:`)
         .setColor(0xffa500)
         .setFooter("Beeing")
         message.channel.send(embed);
