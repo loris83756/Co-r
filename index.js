@@ -22,7 +22,6 @@ bot.on('ready',function() {
     console.log ("Connectedç");
 });
 
-
 bot.on('message', message => {
 if (message.content === prefix + "help") {
     const embed = new RichEmbed()
