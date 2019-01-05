@@ -63,6 +63,7 @@ if (message.content === prefix + "help") {
                 .addField(`:regional_indicator_h: Hébergeur:`, `Heroku`, true)
                 .addField(`:ok_hand: Server Support:`, `[Cliquer ici](https://discord.gg/fERCmfe)`) 
                 .addField(`:bee: Inviter Beeing:`, `[Cliquer ici](https://discordapp.com/oauth2/authorize?client_id=515518385686183937&permissions=0&scope=bot)`) 
+                .setTimestamp()
                 .setColor(0xffa500);
             message.channel.send(embed);
     }
@@ -87,7 +88,7 @@ if (message.content === prefix + "help") {
     if (message.content === prefix + "avatar") {
         const embed = new RichEmbed()
         .setTitle(`**Voici ton avatar:**`)
-        .addImage(`message.author.avatarURL`)
+        .setImage(`message.author.avatarURL`)
         .setColor(0xffa500)
         .setFooter("Beeing")
         message.channel.send(embed);
