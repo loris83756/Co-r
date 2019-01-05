@@ -64,6 +64,7 @@ if (message.content === prefix + "help") {
                 .addField(`:ok_hand: Server Support:`, `[Cliquer ici](https://discord.gg/fERCmfe)`) 
                 .addField(`:bee: Inviter Beeing:`, `[Cliquer ici](https://discordapp.com/oauth2/authorize?client_id=515518385686183937&permissions=0&scope=bot)`) 
                 .setTimestamp()
+                .setFooter("Beeing","https://discordapp.com/channels/393828385383776256/511129543768145930/531220473665814539")
                 .setColor(0xffa500);
             message.channel.send(embed);
     }
@@ -87,8 +88,7 @@ if (message.content === prefix + "help") {
     
     if (message.content === prefix + "avatar") {
         const embed = new RichEmbed()
-        .setTitle(`**Voici ton avatar:**`)
-        .setImage(`message.author.avatarURL`)
+        .addField(`**Voici ton avatar:**`,`**:attetion: EN MAINTENANCE DESOLER POUR LA GENE OCASIONE :( :attention:`)
         .setColor(0xffa500)
         .setFooter("Beeing")
         message.channel.send(embed);
