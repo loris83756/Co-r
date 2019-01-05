@@ -62,6 +62,7 @@ if (message.content === prefix + "help") {
                 .addField(`:pencil: Codage utilisé:`, `Node JS 11.4.2`)
                 .addField(`:regional_indicator_h: Hébergeur:`, `Heroku`, true)
                 .addField(`:ok_hand: Server Support:`, `[Cliquer ici](https://discord.gg/fERCmfe)`) 
+                .addField(`:bee: Inviter Beeing:`, `[Cliquer ici](https://discordapp.com/oauth2/authorize?client_id=515518385686183937&permissions=0&scope=bot)`) 
                 .setColor(0xffa500);
             message.channel.send(embed);
     }
