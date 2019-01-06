@@ -90,9 +90,9 @@ if (message.content === prefix + "help") {
     
     if (message.content === prefix + "avatar") {
         const embed = new RichEmbed()
-        .addField(`**~~Voici ton avatar:~~**`,`tools: ** EN MAINTENANCE DESOLER POUR LA GENE OCASIONE :( **:tools:`)
+        .addField(`**~~Voici ton avatar:~~**`,`:tools: ** EN MAINTENANCE DESOLER POUR LA GENE OCASIONE :( **:tools:`)
         .setColor(0xffa500)
-        .setFooter("Beeing")
+        .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         message.channel.send(embed);
     }
     
