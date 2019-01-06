@@ -6,27 +6,12 @@ const { Client, RichEmbed } = require('discord.js');
 var prefix = ("*")
 
 bot.on("guildMemberAdd" , member => {
-    member.guild.channels.find("name","nouveau-départ")
-      const embed = new RichEmbed()
-    .setTitle(`**Bienvenue** ${member}`)
-    .setThumbnail(message.author.avatarURL)
-    .setColor(0xffa500)
-    .setTimestamp()
-    .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-     message.channel.send(embed)
+    member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue** ${member}`)
 })
 
 bot.on("guildMemberRemove" , member => {
-    member.guild.channels.find("name","nouveau-départ")
-       const embed = new RichEmbed()
-    .setTitle(`**${member} a quitté le serveur **`)
-    .setThumbnail(message.author.avatarURL)
-    .setColor(0xffa500)
-    .setTimestamp()
-    .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-     message.channel.send(embed)
+    member.guild.channels.find("name","nouveau-départ").send(`**${member} a quitté le serveur **`)
 })
-
 bot.on(`guildMemberAdd`,member => {
     var role = member.guild.roles.find(`name`, `Membres`);
     member.addRole(role)
