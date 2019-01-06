@@ -90,9 +90,10 @@ if (message.content === prefix + "help") {
     
     if (message.content === prefix + "avatar") {
         const embed = new RichEmbed()
-        .addField(`**Voici ton avatar**`,`message.author.avatar`)
+        .setTitle(`**Voici ton avatar**`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+        .setThumbnail(message.author.avatar)
         message.channel.send(embed);
     }
     
