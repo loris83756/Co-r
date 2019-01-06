@@ -41,7 +41,7 @@ if (message.content === prefix + "help") {
       .addField(`Auto rôle Membres `,`:small_orange_diamond:Ajoute automatiquement le rôle Membres a tout les nouveaux de votre serveur. \n :exclamation: Attention il faut posséder le rôle Membres.:exclamation:`)
       .setColor(0xffa500)
       .setTimestamp()
-      .setFooter("Beeing","https://discordapp.com/channels/393828385383776256/511129543768145930/531220473665814539")
+      .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
     message.author.send(embed);
   }
     
@@ -50,7 +50,7 @@ if (message.content === prefix + "help") {
       .setTitle('Les commandes vous ont été envoyés en MP :mailbox_with_mail:')
       .setColor(0xffa500)
       .setTimestamp()
-      .setFooter("Beeing","https://discordapp.com/channels/393828385383776256/511129543768145930/531220473665814539")
+      .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
      message.channel.send(embed)
     }
     
@@ -66,7 +66,7 @@ if (message.content === prefix + "help") {
                 .addField(`:ok_hand: Server Support:`, `[Cliquer ici](https://discord.gg/fERCmfe)`) 
                 .addField(`:bee: Inviter Beeing:`, `[Cliquer ici](https://discordapp.com/oauth2/authorize?client_id=515518385686183937&permissions=0&scope=bot)`) 
                 .setTimestamp()
-                .setFooter("Beeing","https://discordapp.com/channels/393828385383776256/511129543768145930/531220473665814539")
+                .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
                 .setColor(0xffa500);
             message.channel.send(embed);
     }
