@@ -7,7 +7,6 @@ var prefix = ("*")
 
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ")
-    )
       const embed = new RichEmbed()
     .setTitle(`**Bienvenue** ${member}`)
     .setThumbnail(message.author.avatarURL)
@@ -15,19 +14,18 @@ bot.on("guildMemberAdd" , member => {
     .setTimestamp()
     .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
      message.channel.send(embed)
-}
+})
 
 bot.on("guildMemberRemove" , member => {
     member.guild.channels.find("name","nouveau-départ")
-)
-        const embed = new RichEmbed()
+       const embed = new RichEmbed()
     .setTitle(`**${member} a quitté le serveur **`)
     .setThumbnail(message.author.avatarURL)
     .setColor(0xffa500)
     .setTimestamp()
     .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-     message.channel.send(
-}
+     message.channel.send(embed)
+})
 
 bot.on(`guildMemberAdd`,member => {
     var role = member.guild.roles.find(`name`, `Membres`);
