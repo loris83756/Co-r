@@ -84,7 +84,8 @@ if (message.content === prefix + "help") {
     const embed = new RichEmbed()
                 .setTitle(`:ping_pong: Pong: ${bot.ping} ms`)
                 .setColor(0xffa500)
-                .setFooter("Beeing")
+                .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+                .setTimestamp()
      message.channel.send(embed);
     }
     
