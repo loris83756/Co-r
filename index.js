@@ -76,8 +76,13 @@ if (message.content === prefix + "help") {
         console.log("Commande Salut effectué");
     }
     
-     if (message.content === prefix + "serveurs"){
-        message.channel.sendMessage(bot.guilds.map(r => r.name + ` |**${r.memberCount}** membres`))
+     if (message.content === prefix + "serveurs") {
+         const embed = new RichEmbed()
+        .setTitle(bot.guilds.map(r => r.name + ` |**${r.memberCount}** membres`))
+        .setTimestamp()
+        .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+        .setColor(0xffa500);
+         message.channel.send(embed)
     }
 
   if (message.content === prefix + "ping") {
