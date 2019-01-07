@@ -18,7 +18,8 @@ bot.on(`guildMemberAdd`,member => {
 })
 
 bot.on('ready',function() {
-    bot.user.setGame("Commande: *help");
+    bot.user.setGame("*help");
+     bot.user.setActivity(`basics`, {type: "Commande:"})
     console.log ("Connected");
 });
 
