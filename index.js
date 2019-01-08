@@ -19,7 +19,6 @@ bot.on(`guildMemberAdd`,member => {
 
 bot.on('ready',function() {
     bot.user.setGame("*help");
-     bot.user.setActivity(`basics`, {type: "Commande:"})
     console.log ("Connected");
 });
 
@@ -28,10 +27,10 @@ if (message.content === prefix + "help") {
     const embed = new RichEmbed()
       .setTitle('**__Liste des commandes__::bee:** \n ')
       .addField(`*info-bot`,`:small_orange_diamond:Donne des informations sur le bot.`)
-      .addField(`*ping`,`:small_orange_diamond: Donne le temps de réaction du bot en ms.`)
-      .addField(`*serveurs`,`:small_orange_diamond: Donne la liste de tous les serveurs et du nombre de membres ou se trouve Beeing#4440.`)
-      .addField(`*avatar`,`:small_orange_diamond:Donne ton avatar Discord. `)
       .addField(`*info-serveur`,`:small_orange_diamond:Donne des informations sur le serveur ou est effectué cette commande. `)
+      .addField(`*serveurs`,`:small_orange_diamond: Donne la liste de tous les serveurs et du nombre de membres ou se trouve Beeing#4440.`)
+      .addField(`*ping`,`:small_orange_diamond: Donne le temps de réaction du bot en ms.`)
+      .addField(`*avatar`,`:small_orange_diamond:Donne ton avatar Discord. `)
       .addField(`**__Liste des commandes de modérations__::bee:**`,)
       .addField(`*ban (Bientot disponible)`,`:tools:Permet de bannir des utilisateurs.`)
       .addField(`*kick (Bientot disponible)`,`:tools: Permet d´expulser des utilisateurs.`)
