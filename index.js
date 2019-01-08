@@ -27,10 +27,11 @@ bot.on('message', message => {
 if (message.content === prefix + "help") {
     const embed = new RichEmbed()
       .setTitle('**__Liste des commandes__::bee:** \n ')
-      .addField(`*informations`,`:small_orange_diamond:Donne des informations sur le bot.`)
+      .addField(`*info-bot`,`:small_orange_diamond:Donne des informations sur le bot.`)
       .addField(`*ping`,`:small_orange_diamond: Donne le temps de réaction du bot en ms.`)
       .addField(`*serveurs`,`:small_orange_diamond: Donne la liste de tous les serveurs et du nombre de membres ou se trouve Beeing#4440.`)
       .addField(`*avatar`,`:small_orange_diamond:Donne ton avatar Discord. `)
+      .addField(`*info-serveur`,`:small_orange_diamond:Donne des informations sur le serveur ou est effectué cette commande. `)
       .addField(`**__Liste des commandes de modérations__::bee:**`,)
       .addField(`*ban (Bientot disponible)`,`:tools:Permet de bannir des utilisateurs.`)
       .addField(`*kick (Bientot disponible)`,`:tools: Permet d´expulser des utilisateurs.`)
@@ -54,7 +55,7 @@ if (message.content === prefix + "help") {
      message.channel.send(embed)
     }
     
-    if (message.content === prefix + "informations") {
+    if (message.content === prefix + "info-bot") {
   const embed = new RichEmbed()
                 .setTitle(':information_source: **Informations:**')
                 .addField(`:satellite: Serveurs:`, `${bot.guilds.size}`)
@@ -103,6 +104,19 @@ if (message.content === prefix + "help") {
         .setTimestamp()
         message.channel.send(embed);
     }
+    
+    if (message.content === prefix + "info-serveur") {
+    const embed = new RichEmbed()
+    .setTitle("**:information_source: Information du Serveur**") 
+    .addField(":satellite: Nom du serveur", message.guild.name)
+    .addField("**:pencil: Crée le:**", message.guild.createdAt)
+    .addField("**:grinning: Membres sur le discord:**", message.guild.memberCount)
+    .addField("**:door: Tu as rejoin le:**", message.member.joinedAt)
+    .setColor(0xffa500)
+    .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+    .setTimestamp()
+message.channel.sendEmbed(embed)
+}
     
 }); 
 bot.login(process.env.TOKEN);
