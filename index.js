@@ -124,7 +124,7 @@ let banargs = messageban.slice(1);
 if (ban === prefix + "ban") {
     let banUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(banargs[0]));
     if (!banUser) 
-    return message.channel.send("**Vous devez mentionné l'utilisateur a bannir et donner la raison de sa sasnction.**");
+    return message.channel.send("**Vous devez mentionné l'utilisateur a bannir et la raison de la sanction.**");
     let banRaison = banargs.join(" ").slice(22);
     if(!message.member.hasPermission("BAN_MEMBERS")) 
     return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
