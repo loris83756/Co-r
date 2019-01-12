@@ -31,7 +31,7 @@ if (message.content === prefix + "help") {
       .addField(`*serveurs`,`:small_orange_diamond: Donne la liste de tous les serveurs et du nombre de membres ou se trouve Beeing#4440.`)
       .addField(`*ping`,`:small_orange_diamond: Donne le temps de réaction du bot en ms.`)
       .addField(`*avatar`,`:small_orange_diamond:Donne ton avatar Discord. `)
-      .addField(`**......................................................... \n :hammer:__Commandes de modérations__::hammer:**`,` \n **.........................................................** `)
+      .addField(`**......................................................... \n :hammer:__Commandes modérations__::hammer:**`,` \n **.........................................................** `)
       .addField(`*ban + utilisateur + raison de la sanction`,`:small_orange_diamond: Permet de bannir des utilisateurs.`)
       .addField(`*kick (Bientot disponible)`,`:tools: Permet d´expulser des utilisateurs.`)
       .addField(`*mute (Bientot disponible)`,`:tools: Permet de rendre muet des utilisateurs.`)
