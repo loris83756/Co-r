@@ -129,7 +129,7 @@ if (ban === prefix + "ban") {
     if(!message.member.hasPermission("BAN_MEMBERS")) 
     return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
     if(banUser.hasPermission("BAN_MEMBERS")) 
-    return message.channel.send("**Je ne peut pas bannir cet utilisateur ou vous n'avez pas mit la raison de la sanction.**");
+    return message.channel.send("**Je ne peut pas bannir cet utilisateur ou vous n'avez pas mit **");
     const embed = new RichEmbed()
     .setTitle("**:hammer: Ban effectué avec succé.**")
     .addField(":wave: Utilisateur banni:",`${banUser}`)
