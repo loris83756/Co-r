@@ -25,7 +25,7 @@ bot.on('ready',function() {
 bot.on('message', message => {
 if (message.content === prefix + "help") {
     const embed = new RichEmbed()
-      .setTitle('**......................................................... \n :bee:__Commandes utiles__::bee:** \n **.........................................................**')
+      .setTitle('**......................................................... \n :bee:__Commandes utiles__::bee:** \n **........................................................**')
       .addField(`*info-bot`,`:small_orange_diamond:Donne des informations sur le bot.`)
       .addField(`*info-serveur`,`:small_orange_diamond:Donne des informations sur le serveur ou est effectué cette commande. `)
       .addField(`*serveurs`,`:small_orange_diamond: Donne la liste de tous les serveurs et du nombre de membres ou se trouve Beeing#4440.`)
