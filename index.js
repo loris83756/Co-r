@@ -142,6 +142,5 @@ if (ban === prefix + "ban") {
 message.channel.send(embed);
 }
             
-    
 }); 
 bot.login(process.env.TOKEN);
