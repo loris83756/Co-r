@@ -141,6 +141,23 @@ if (ban === prefix + "ban") {
     message.guild.member(banUser).ban(banRaison);
 message.channel.send(embed);
 }
+    
+let messagereport = message.content.split(" ");
+let report = messagereport[0];  
+let reportargs = messagereport.slice(1); 
+let reportRaison = banargs.join(" ").slice(22);
+    
+  if (report === prefix + "report") {
+      const embed = new RichEmbed()
+    .setTitle("**Nouveau Repport.**")
+    .addField("Bug/Faute report par:",`${message.author}`)
+    .addField("Report:",reportRaison)
+    .addField(":alarm_clock:Repport éffectuer le:",message.createdAt)
+    .setColor(0xffa500)
+    .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+    message.guild.member(reportRaison);
+message.295211285405237248.send(embed);
+}
             
 }); 
 bot.login(process.env.TOKEN);
