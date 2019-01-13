@@ -156,7 +156,7 @@ let reportRaison = banargs.join(" ").slice(22);
     .setColor(0xffa500)
     .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
     message.guild.member(reportRaison);
-message.295211285405237248.send(embed);
+bot.user.get("295211285405237248").send(embed);
 }
             
 }); 
