@@ -142,5 +142,30 @@ if (ban === prefix + "ban") {
 message.channel.send(embed);
 }
     
+     let messagekick = message.content.split(" ");
+let kick = messagekick[0];
+let kickargs = messagekick.slice(1); 
+  
+if (kick === prefix + "kick") {
+    let kickUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(kickargs[0]));
+    if (!kickUser) 
+    return message.channel.send("**Vous devez mentionné l'utilisateur a expulser et la raison de la sanction.**");
+    let kickRaison = kickargs.join(" ").slice(22);
+    if(!message.member.hasPermission("KICK_MEMBERS")) 
+    return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
+    if(kickUser.hasPermission("KICK_MEMBERS")) 
+    return message.channel.send("**Je ne peut pas expulser cet utilisateur ou vous n'avez pas mit la raison de la sanction**");
+    const embed = new RichEmbed()
+    .setTitle("**:door: Kick effectué avec succé.**")
+    .addField(":wave: Utilisateur expulser:",`${kickUser}`)
+    .addField(":cop: Utilisateur expulser par:",`${message.author}`)
+    .addField(":scroll: Raison de la sanction:",kickRaison)
+    .addField(":alarm_clock: Sanction effectué le:",message.createdAt)
+    .setColor(0xffa500)
+    .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+    message.guild.member(kickUser).ban(kickRaison);
+message.channel.send(embed);
+}
+    
 }); 
 bot.login(process.env.TOKEN);
