@@ -33,7 +33,7 @@ if (message.content === prefix + "help") {
       .addField(`*avatar`,`:small_orange_diamond:Donne ton avatar Discord. `)
       .addField(`**......................................................... \n :hammer:__Commandes modérations__::hammer:**`,` \n **.........................................................** `)
       .addField(`*ban + utilisateur + raison de la sanction`,`:small_orange_diamond: Permet de bannir des utilisateurs.`)
-      .addField(`*kick (Bientot disponible)`,`:tools: Permet d´expulser des utilisateurs.`)
+      .addField(`*kick + utilisateur + raison de la sanction`,`:tools: Permet d´expulser des utilisateurs.`)
       .addField(`*mute (Bientot disponible)`,`:tools: Permet de rendre muet des utilisateurs.`)
       .addField(`**......................................................... \n :tv:__Autres fonctionalitées:__:tv:**`,` \n **.........................................................**`)
       .addField(`Salut`,`:small_orange_diamond:Dites Salut et le Bot vous dira Bonjour.`)
