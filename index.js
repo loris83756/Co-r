@@ -137,7 +137,7 @@ if (ban === prefix + "ban") {
     .addField(":scroll: Raison de la sanction:",banRaison)
     .addField(":alarm_clock: Sanction effectué le:",message.createdAt)
     .setColor(0xffa500)
-    .setFooter("Beeing")
+    .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
     message.guild.member(banUser).ban(banRaison);
 message.channel.send(embed);
 }
