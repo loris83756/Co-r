@@ -1,4 +1,3 @@
-
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const { Client, RichEmbed } = require('discord.js');
@@ -142,7 +141,7 @@ if (ban === prefix + "ban") {
 message.channel.send(embed);
 }
     
-     let messagekick = message.content.split(" ");
+let messagekick = message.content.split(" ");
 let kick = messagekick[0];
 let kickargs = messagekick.slice(1); 
   
@@ -169,3 +168,4 @@ message.channel.send(embed);
 
 }); 
 bot.login(process.env.TOKEN);
+
