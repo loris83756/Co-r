@@ -166,18 +166,6 @@ if (kick === prefix + "kick") {
     message.guild.member(kickUser).ban(kickRaison);
 message.channel.send(embed);
 }
-  const ffmpeg = require("ffmpeg-binaries") 
-  if (message.content === prefix + "join") {
-    if (message.member.voiceChannel) {
-      message.member.voiceChannel.join()
-        .then(connection => {
-          message.reply("J'ai bien réussi a me connecter");
-        })
-        .catch(console.log);
-    } else {
-      message.reply("Tu dois d'abbord tu connecter dans un salon vocal");
-    }
-  }
-    
+
 }); 
 bot.login(process.env.TOKEN);
