@@ -87,7 +87,7 @@ let userargs = messageuser.slice(1);
         .addField("**ID:**",`${users.id}`)
         .addField("**Joue a:**",`${users.presence.game ? users.presence.game.name : 'Rien'}`,true)
         .addField("**Statu:**",`${users.presence.status}`,true)
-        .setThumbnail(`${users.avatarURL}`)
+        .setThumbnail(`users.avatarURL`)
         .setTimestamp()
         message.guild.member(users)
         message.channel.send(embed);
