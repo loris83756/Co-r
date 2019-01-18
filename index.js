@@ -107,7 +107,7 @@ let userargs = messageuser.slice(1);
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .addField("**Nom:**",`${users}`)
         .addField("**ID:**",`${users.id}`)
-        .addField("**Joue a:**",`${users.presence.game ? message.users.presence.game.name : 'Rien'}`,true)
+        .addField("**Joue a:**",`${users.presence.game ? users.presence.game.name : 'Rien'}`,true)
         .addField("**Statu:**",`${users.presence.status}`,true)
         .setTimestamp()
         message.guild.member(users)
