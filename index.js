@@ -83,6 +83,7 @@ let userargs = messageuser.slice(1);
         .setTitle(`**__:information_source: User info__**`) 
         .addField(" :grinning: Nom:",`${users}`)
         .addField(" :id: ID:",`${users.id}`)
+        .addField("Bot:",`${users.bot`)
         .addField(":vertical_traffic_light:Statu:",`  ${users.presence.status} `)
         .addField(":video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"}`)
         .setColor(0xffa500)
