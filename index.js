@@ -78,14 +78,13 @@ let userargs = messageuser.slice(1);
    if (infouser === prefix + "user-info") {
      let users = message.guild.member(message.mentions.users.first() || message.guild.members.get(userargs[0]));
     if (!users) 
-    return message.channel.send("**Vous devez mentionné un utilisateur.**");
+    return message.channel.send("**Vous devez mentionné un utilisateur.**"); 
         const embed = new RichEmbed()
         .setTitle(`**__:information_source: User info__**`) 
-        .addField(" \n :grinning: Nom:",`${users} \n `)
-        .addField(" \n :id: ID:",`${users.id} \n `)
-        .addField(" \n :vertical_traffic_light: Statu:",`  ${users.presence.status} \n `)
-        .addField(" \n :video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"} \n `)
-        .setThumbnail(users.avatarURL)
+        .addField(" :grinning: Nom:",`${users}`," \n :id: ID:",`${users}`)
+        .addField(" \n :vertical_traffi_light: Statu:",`  ${users.presence.status} `)
+        .addField(" \n :video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"}`)
+        .setThumbnail(`users.avatarURL`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .setTimestamp()
