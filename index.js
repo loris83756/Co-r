@@ -81,13 +81,13 @@ let userargs = messageuser.slice(1);
     return message.channel.send("**Vous devez mentionné un utilisateur.**");
         const embed = new RichEmbed()
         .setTitle(`**:information_source: User info**`) 
-        .setColor(0xffa500)
-        .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .addField("**:grinning: Nom:**",`${users}`)
         .addField("**:id: ID:**",`${users.id}`)
-        .addField("** :vertical_traffic_light: Statu:**",`${users.presence.status}`,true)
+        .addField("**:vertical_traffic_light: Statu:**",`${users.presence.status}`,true)
         .addField("**:video_game: Joue a:**",`${users.presence.game ? users.presence.game.name : 'Rien'}`,true)
         .setThumbnail(`https://www.easyfairs.com/fileadmin/groups/64/Maintenance_2018/Website_benodigdheden/Main_logo.png`)
+        .setColor(0xffa500)
+        .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .setTimestamp()
         message.guild.member(users)
         message.channel.send(embed);
