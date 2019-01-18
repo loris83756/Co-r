@@ -81,7 +81,8 @@ let userargs = messageuser.slice(1);
     return message.channel.send("**Vous devez mentionné un utilisateur.**"); 
         const embed = new RichEmbed()
         .setTitle(`**__:information_source: User info__**`) 
-        .addField(" :grinning: Nom:",`${users} \n :id: ID: \n ${users}`)
+        .addField(" :grinning: Nom:",`${users}`)
+        .addField(" :id: ID:",`${users.id}`)
         .addField(" \n :vertical_traffi_light: Statu:",`  ${users.presence.status} `)
         .addField(" \n :video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"}`)
         .setColor(0xffa500)
