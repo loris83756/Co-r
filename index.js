@@ -84,7 +84,6 @@ let userargs = messageuser.slice(1);
         .addField(" :grinning: Nom:",`${users}`," \n :id: ID:",`${users}`)
         .addField(" \n :vertical_traffi_light: Statu:",`  ${users.presence.status} `)
         .addField(" \n :video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"}`)
-        .setThumbnail(`users.avatarURL`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .setTimestamp()
