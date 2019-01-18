@@ -87,7 +87,7 @@ let userargs = messageuser.slice(1);
         .addField("**ID:**",`${users.id}`)
         .addField("**Joue a:**",`${users.presence.game ? users.presence.game.name : 'Rien'}`,true)
         .addField("**Statu:**",`${users.presence.status}`,true)
-        .setThumbnail(`users.avatarURL`)
+        .setThumbnail(`https://www.easyfairs.com/fileadmin/groups/64/Maintenance_2018/Website_benodigdheden/Main_logo.png`)
         .setTimestamp()
         message.guild.member(users)
         message.channel.send(embed);
