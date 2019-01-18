@@ -106,9 +106,9 @@ let userargs = messageuser.slice(1);
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .addField("**Nom:**",`${users}`)
-        .addField("**ID:**",`${message.users.id}`)
-        .addField("**Joue a:**",`${message.users.presence.game ? message.users.presence.game.name : 'Rien'}`,true)
-        .addField("**Statu:**",`${message.users.presence.status}`,true)
+        .addField("**ID:**",`${users.id}`)
+        .addField("**Joue a:**",`${users.presence.game ? message.users.presence.game.name : 'Rien'}`,true)
+        .addField("**Statu:**",`${users.presence.status}`,true)
         .setTimestamp()
         message.guild.member(users)
         message.channel.send(embed);
