@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const { Client, RichEmbed } = require('discord.js');
 
 var prefix = ("*")
-
+//BIENVENUE / A QUTTER LE SERVEUR-----------------------------------------------------------------------------------------------
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**Bienvenue** ${member}`)
 })
@@ -11,16 +11,17 @@ bot.on("guildMemberAdd" , member => {
 bot.on("guildMemberRemove" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**${member} a quitté le serveur **`)
 })
+// AUTO ROLE---------------------------------------------------------------------------------------------------------------------
 bot.on(`guildMemberAdd`,member => {
     var role = member.guild.roles.find(`name`, `Membres`);
     member.addRole(role)
 })
-
+//SET GAME-----------------------------------------------------------------------------------------------------------------------
 bot.on('ready',function() {
     bot.user.setGame("Commande:*help");
     console.log ("Connected");
 });
-
+//HELP---------------------------------------------------------------------------------------------------------------------------
 bot.on('message', message => {
 if (message.content === prefix + "help") {
     const embed = new RichEmbed()
@@ -52,7 +53,7 @@ if (message.content === prefix + "help") {
       .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
      message.channel.send(embed)
     }
-    
+    //INFO BOT-----------------------------------------------------------------------------------------------------------------------
     if (message.content === prefix + "bot-info") {
   const embed = new RichEmbed()
                 .setTitle(':information_source: **Informations:**')
@@ -69,34 +70,11 @@ if (message.content === prefix + "help") {
                 .setColor(0xffa500);
             message.channel.send(embed);
     }
-    
-    if (message.content === "Salut"){
-        message.reply("Bien le bonjour.");
-        console.log("Commande Salut effectué");
-    }
-    
-     if (message.content === prefix + "serveurs") {
-         const embed = new RichEmbed()
-        .setTitle(bot.guilds.map(r => r.name + ` |**${r.memberCount}** membres`))
-        .setTimestamp()
-        .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-        .setColor(0xffa500);
-         message.channel.send(embed)
-    }
-
-  if (message.content === prefix + "ping") {
-    const embed = new RichEmbed()
-                .setTitle(`:ping_pong: Pong: ${bot.ping} ms`)
-                .setColor(0xffa500)
-                .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-                .setTimestamp()
-     message.channel.send(embed);
-    }
-    
-   let messageuser = message.content.split(" ");
+//USER INFO---------------------------------------------------------------------------------------------------------------------------
+let messageuser = message.content.split(" ");
 let infouser = messageuser[0];
 let userargs = messageuser.slice(1); 
-
+    
    if (infouser === prefix + "user-info") {
      let users = message.guild.member(message.mentions.users.first() || message.guild.members.get(userargs[0]));
     if (!users) 
@@ -109,11 +87,12 @@ let userargs = messageuser.slice(1);
         .addField("**ID:**",`${users.id}`)
         .addField("**Joue a:**",`${users.presence.game ? users.presence.game.name : 'Rien'}`,true)
         .addField("**Statu:**",`${users.presence.status}`,true)
+        .setThumbnail(users.avatarURL)
         .setTimestamp()
         message.guild.member(users)
         message.channel.send(embed);
     }
-    
+    //SERVEUR INFO--------------------------------------------------------------------------------------------------------------------
     if (message.content === prefix + "serveur-info") {
     const embed = new RichEmbed()
     .setTitle("**:information_source: Information du Serveur**") 
@@ -126,7 +105,30 @@ let userargs = messageuser.slice(1);
     .setTimestamp()
 message.channel.sendEmbed(embed)
 }
-     
+//SALUT----------------------------------------------------------------------------------------------------------------------------    
+    if (message.content === "Salut"){
+        message.reply("Bien le bonjour.");
+        console.log("Commande Salut effectué");
+    }
+//SERVEURS-------------------------------------------------------------------------------------------------------------------------    
+     if (message.content === prefix + "serveurs") {
+         const embed = new RichEmbed()
+        .setTitle(bot.guilds.map(r => r.name + ` |**${r.memberCount}** membres`))
+        .setTimestamp()
+        .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+        .setColor(0xffa500);
+         message.channel.send(embed)
+    }
+//PING-----------------------------------------------------------------------------------------------------------------------------
+  if (message.content === prefix + "ping") {
+    const embed = new RichEmbed()
+                .setTitle(`:ping_pong: Pong: ${bot.ping} ms`)
+                .setColor(0xffa500)
+                .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+                .setTimestamp()
+     message.channel.send(embed);
+    }
+//BAN----------------------------------------------------------------------------------------------------------------------     
 let messageban = message.content.split(" ");
 let ban = messageban[0];
 let banargs = messageban.slice(1); 
@@ -151,7 +153,7 @@ if (ban === prefix + "ban") {
     message.guild.member(banUser).ban(banRaison);
 message.channel.send(embed);
 }
-    
+ //KICK---------------------------------------------------------------------------------------------------------------------   
 let messagekick = message.content.split(" ");
 let kick = messagekick[0];
 let kickargs = messagekick.slice(1); 
