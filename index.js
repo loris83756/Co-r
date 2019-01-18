@@ -105,7 +105,7 @@ let userargs = messageuser.slice(1);
         .setTitle(`**User info**`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-        .addField("**Nom:**",`${message.users.username}`)
+        .addField("**Nom:**",`${users}`)
         .addField("**ID:**",`${message.users.id}`)
         .addField("**Joue a:**",`${message.users.presence.game ? message.users.presence.game.name : 'Rien'}`,true)
         .addField("**Statu:**",`${message.users.presence.status}`,true)
