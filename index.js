@@ -25,8 +25,8 @@ bot.on('message', message => {
 if (message.content === prefix + "help") {
     const embed = new RichEmbed()
       .setTitle('**......................................................... \n :bee:__Commandes utiles__::bee:** \n **........................................................**')
-      .addField(`*info-bot`,`:small_orange_diamond:Donne des informations sur le bot.`)
-      .addField(`*info-serveur`,`:small_orange_diamond:Donne des informations sur le serveur ou est effectué cette commande. `)
+      .addField(`*bot-info`,`:small_orange_diamond:Donne des informations sur le bot.`)
+      .addField(`*serveur-info`,`:small_orange_diamond:Donne des informations sur le serveur ou est effectué cette commande. `)
       .addField(`*serveurs`,`:small_orange_diamond: Donne la liste de tous les serveurs et du nombre de membres ou se trouve Beeing#4440.`)
       .addField(`*ping`,`:small_orange_diamond: Donne le temps de réaction du bot en ms.`)
       .addField(`*avatar`,`:small_orange_diamond:Donne ton avatar Discord. `)
@@ -53,7 +53,7 @@ if (message.content === prefix + "help") {
      message.channel.send(embed)
     }
     
-    if (message.content === prefix + "info-bot") {
+    if (message.content === prefix + "bot-info") {
   const embed = new RichEmbed()
                 .setTitle(':information_source: **Informations:**')
                 .addField(`:satellite: Serveurs:`, `${bot.guilds.size}`)
@@ -93,17 +93,28 @@ if (message.content === prefix + "help") {
      message.channel.send(embed);
     }
     
-    if (message.content === prefix + "avatar") {
+   let messageuser = message.content.split(" ");
+let infouser = messageuser[0];
+let userargs = messageuser.slice(1); 
+
+   if (infouser === prefix + "user-info") {
+     let users = message.guild.member(message.mentions.users.first() || message.guild.members.get(userargs[0]));
+    if (!users) 
+    return message.channel.send("**Vous devez mentionné un utilisateur.**");
         const embed = new RichEmbed()
-        .setTitle(`**Voici ton avatar:**`)
+        .setTitle(`**User info**`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-        .setThumbnail(message.author.avatarURL)
+        .addField("**Nom:**",`${message.users.username}`)
+        .addField("**ID:**",`${message.users.id}`)
+        .addField("**Joue a:**",`${message.users.presence.game ? message.users.presence.game.name : 'Rien'}`,true)
+        .addField("**Statu:**",`${message.users.presence.status}`,true)
         .setTimestamp()
+        message.guild.member(users)
         message.channel.send(embed);
     }
     
-    if (message.content === prefix + "info-serveur") {
+    if (message.content === prefix + "serveur-info") {
     const embed = new RichEmbed()
     .setTitle("**:information_source: Information du Serveur**") 
     .addField(":satellite: Nom du serveur", message.guild.name)
@@ -162,7 +173,7 @@ if (kick === prefix + "kick") {
     .addField(":alarm_clock: Sanction effectué le:",message.createdAt)
     .setColor(0xffa500)
     .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-    message.guild.member(kickUser).kick(kickRaison);
+    message.guild.member(kickUser).ban(kickRaison);
 message.channel.send(embed);
 }
 
