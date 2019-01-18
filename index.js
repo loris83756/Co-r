@@ -84,7 +84,7 @@ let userargs = messageuser.slice(1);
         .addField(" \n :grinning: Nom:",`${users}`)
         .addField(":id: ID:",`${users.id}`)
         .addField(":vertical_traffic_light: Statu:",`  ${users.presence.status}`,true)
-        .addField(":video_game: Joue a:",'  ${users.presence.game ? users.presence.game.name : "Rien"}',true)
+        .addField(":video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"}`,true)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .setTimestamp()
