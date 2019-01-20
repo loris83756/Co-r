@@ -105,11 +105,6 @@ let userargs = messageuser.slice(1);
     .setTimestamp()
 message.channel.sendEmbed(embed)
 }
-//SALUT----------------------------------------------------------------------------------------------------------------------------    
-    if (message.content === "Salut"){
-        message.reply("Bien le bonjour.");
-        console.log("Commande Salut effectué");
-    }
 //SERVEURS-------------------------------------------------------------------------------------------------------------------------    
      if (message.content === prefix + "serveurs") {
          const embed = new RichEmbed()
@@ -128,6 +123,32 @@ message.channel.sendEmbed(embed)
                 .setTimestamp()
      message.channel.send(embed);
     }
+//SALUT----------------------------------------------------------------------------------------------------------------------------    
+    if (message.content === "Salut"){
+        message.reply("Bien le bonjour.");
+        console.log("Commande Salut effectué");
+    }
+ //Dé------------------------------------------------------------------------------------------------------------------------------   
+    if (message.content === prefix + "dé") {
+    var reponse = [":one:",":two:",":three:",":four:",":five:",":six:"]
+    var resultat = Math.floor((Math.random() * reponse.length));
+    const embed =new RichEmbed()
+    .setTitle('**__:game_die: Dé__**')
+    .addField("Tu es tombé sur le :",reponse[resultat])
+    .setColor(0xffa500)
+    message.channel.send(embed)
+}
+//PILE/FACE------------------------------------------------------------------------------------------------------------------------  
+   if (message.content === prefix + "pile/face") {
+    var reponse = [":regional_indicator_f: :regional_indicator_a: :regional_indicator_c: :regional_indicator_e:",":regional_indicator_p: :regional_indicator_i: :regional_indicator_l: :regional_indicator_e: "]
+    var resultat = Math.floor((Math.random() * reponse.length));
+    const embed =new RichEmbed()
+    .setTitle('**__:moneybag: Pile ou Face ??__**')
+    .addField("Tu es tombé sur:",reponse[resultat])
+    .setThumbnail("https://www.gifimage.net/wp-content/uploads/2018/11/pile-ou-face-gif-1.gif")
+    .setColor(0xffa500)
+    message.channel.send(embed)
+} 
 //BAN----------------------------------------------------------------------------------------------------------------------     
 let messageban = message.content.split(" ");
 let ban = messageban[0];
