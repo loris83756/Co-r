@@ -211,6 +211,9 @@ if (clear === prefix + "clear") {
 return message.channel.send("**Vous devez indiquer le nombre de message a supprimer.**");
   if(!message.member.hasPermission("MANAGE_MESSAGE")) 
     return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
+     let clearn = clearargs.join(" ").slice(22);
+    if(clearn.hasPermission("MANAGE_MESSAGE")) 
+    return message.channel.send("**Je ne peut pas supprimer les messages ou vous n'avez pas donner le nombre de message a supprimer.**");
 message.channel.bulkDelete(clearargs[0]).then(() => {
     message.channel.send(`${clearargs[0]} messages ont était suprimer.`).then(msg => msg.delete(2000));
 })
