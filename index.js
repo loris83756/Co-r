@@ -80,7 +80,7 @@ let userargs = messageuser.slice(1);
    if (infouser === prefix + "user-info") {
      let users = message.guild.member(message.mentions.users.first() || message.guild.members.get(userargs[0]));
     if (!users) 
-    return message.channel.send("**Vous devez mentionné un utilisateur.**"); 
+    return message.channel.send("**:information_source: Vous devez mentionné un utilisateur.**"); 
         const embed = new RichEmbed()
         .setTitle(`**__:information_source: User info__**`) 
         .addField(" :grinning: Nom:",`${users}`)
@@ -159,12 +159,12 @@ let banargs = messageban.slice(1);
 if (ban === prefix + "ban") {
     let banUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(banargs[0]));
     if (!banUser) 
-    return message.channel.send("**Vous devez mentionné l'utilisateur a bannir et la raison de la sanction.**");
+    return message.channel.send("**:information_source: Vous devez mentionné l'utilisateur a bannir et la raison de la sanction.**");
     let banRaison = banargs.join(" ").slice(22);
     if(!message.member.hasPermission("BAN_MEMBERS")) 
     return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
     if(banUser.hasPermission("BAN_MEMBERS")) 
-    return message.channel.send("**Je ne peut pas bannir cet utilisateur ou vous n'avez pas mit la raison de la sanction**");
+    return message.channel.send("**:information_source: Je ne peut pas bannir cet utilisateur ou vous n'avez pas mit la raison de la sanction**");
     const embed = new RichEmbed()
     .setTitle("**:hammer: Ban effectué avec succé.**")
     .addField(":wave: Utilisateur banni:",`${banUser}`)
@@ -184,12 +184,12 @@ let kickargs = messagekick.slice(1);
 if (kick === prefix + "kick") {
     let kickUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(kickargs[0]));
     if (!kickUser) 
-    return message.channel.send("**Vous devez mentionné l'utilisateur a expulser et la raison de la sanction.**");
+    return message.channel.send("**:information_source: Vous devez mentionné l'utilisateur a expulser et la raison de la sanction.**");
     let kickRaison = kickargs.join(" ").slice(22);
     if(!message.member.hasPermission("KICK_MEMBERS")) 
     return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
     if(kickUser.hasPermission("KICK_MEMBERS")) 
-    return message.channel.send("**Je ne peut pas expulser cet utilisateur ou vous n'avez pas mit la raison de la sanction**");
+    return message.channel.send("**:information_source: Je ne peut pas expulser cet utilisateur ou vous n'avez pas mit la raison de la sanction**");
     const embed = new RichEmbed()
     .setTitle("**:door: Kick effectué avec succé.**")
     .addField(":wave: Utilisateur expulser:",`${kickUser}`)
@@ -208,11 +208,11 @@ let clearargs = messageclear.slice(1);
   
 if (clear === prefix + "clear") {
     if (!clearargs[0]) 
-return message.channel.send("**Vous devez indiquer le nombre de message a supprimer.**");
+return message.channel.send("**:information_source: Vous devez indiquer le nombre de message a supprimer.**");
   if(!message.member.hasPermission("MANAGE_MESSAGE")) 
     return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
      if(isNaN(clearargs[0]))
-return message.channel.send("Tu doit indiquer le nombre de message a supprimer")
+return message.channel.send("**:information_source: Tu doit indiquer le nombre de message a supprimer**")
 message.channel.bulkDelete(clearargs[0]).then(() => {
     message.channel.send(`${clearargs[0]} messages ont était suprimer.`).then(msg => msg.delete(2000));
 })
