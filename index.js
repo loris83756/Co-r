@@ -99,6 +99,7 @@ let userargs = messageuser.slice(1);
     .addField("**:pencil: Crée le:**", message.guild.createdAt)
     .addField("**:grinning: Membres sur le discord:**", message.guild.memberCount)
     .addField("**:door: Tu as rejoin le:**", message.member.joinedAt)
+    .addField("Roles que tu posséde sur ce serveur:",message.member.roles.map(roles =>`${roles.name}`).join(', '))
     .setColor(0xffa500)
     .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
     .setTimestamp()
@@ -177,7 +178,7 @@ if (kick === prefix + "kick") {
     message.guild.member(kickUser).ban(kickRaison);
 message.channel.send(embed);
 }
-
+//TOKEN-----------------------------------------------------------------------------------------------------------------------------
 }); 
 bot.login(process.env.TOKEN);
 
