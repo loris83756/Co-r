@@ -201,6 +201,20 @@ if (kick === prefix + "kick") {
     message.guild.member(kickUser).ban(kickRaison);
 message.channel.send(embed);
 }
+    
+let messageclear = message.content.split(" ");
+let clear = messageclear[0];
+let clearargs = messageclear.slice(1); 
+  
+if (clear === prefix + "clear") {
+    if (!clearargs[0]) 
+return message.channel.send("**Vous devez indiquer le nombre de message a supprimer.**");
+  if(!message.member.hasPermission("MANAGE_MESSAGE")) 
+    return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
+message.channel.bulkDelete(clearargs[0]).then(() => {
+    message.channel.send(`${clearargs[0]} messages ont était suprimer.`).then(msg => msg.delete(2000));
+})
+}
 //TOKEN-----------------------------------------------------------------------------------------------------------------------------
 }); 
 bot.login(process.env.TOKEN);
