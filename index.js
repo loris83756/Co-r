@@ -35,7 +35,7 @@ if (message.content === prefix + "help") {
       .addField(`*ban + utilisateur + raison de la sanction`,`:small_orange_diajmond: Permet de bannir des utilisateurs.`)
       .addField(`*kick + utilisateur + raison de la sanction`,`:tools: Permet d´expulser des utilisateurs.`)
       .addField(`*mute (Bientot disponible)`,`:tools: Permet de rendre muet des utilisateurs.`)
-      .addField(`**......................................................... \n :video_game:__Commandes jeu**__:video_game: `,` \n **.........................................................**`)
+      .addField(`**......................................................... \n :video_game:__Commandes jeu:__:video_game:**`,` \n **.........................................................**`)
       .addField(`**????** \n **Arrive bientot...**`,`**????**`)
       .addField(`**......................................................... \n :tv:__Autres fonctionalitées:__:tv:**`,` \n **.........................................................**`)
       .addField(`Salut`,`:small_orange_diamond:Dites Salut et le Bot vous dira Bonjour.`)
