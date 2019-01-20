@@ -36,7 +36,7 @@ if (message.content === prefix + "help") {
       .addField(`*kick + utilisateur + raison de la sanction`,`:tools: Permet d´expulser des utilisateurs.`)
       .addField(`*mute (Bientot disponible)`,`:tools: Permet de rendre muet des utilisateurs.`)
       .addField(`**......................................................... \n :video_game: **Commandes jeu :video_game: **`,` \n **.........................................................**`)
-      .addField(`**????** \n **Arrive bientot...**`,`**????**`
+      .addField(`**????** \n **Arrive bientot...**`,`**????**`)
       .addField(`**......................................................... \n :tv:__Autres fonctionalitées:__:tv:**`,` \n **.........................................................**`)
       .addField(`Salut`,`:small_orange_diamond:Dites Salut et le Bot vous dira Bonjour.`)
       .addField(`Bienvenue/a quitté le serveur`,`:small_orange_diamond: Dès qu une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:Attention il faut posséder un salon nouveau-départ pour pouvoir avoir accès à cette fonctionnalité.:exclamation:`)
