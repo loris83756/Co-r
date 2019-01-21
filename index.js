@@ -89,6 +89,7 @@ let userargs = messageuser.slice(1);
         .addField(":video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"}`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+        .setThumbnail(message.mentions.users.first.avatarURl)
         .setTimestamp()
         message.guild.member(users)
         message.channel.send(embed);
@@ -201,7 +202,7 @@ if (kick === prefix + "kick") {
     message.guild.member(kickUser).ban(kickRaison);
 message.channel.send(embed);
 }
-    
+//CLEAR----------------------------------------------------------------------------------------------------------------------------
 let messageclear = message.content.split(" ");
 let clear = messageclear[0];
 let clearargs = messageclear.slice(1); 
