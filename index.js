@@ -89,7 +89,7 @@ let userargs = messageuser.slice(1);
         .addField(":video_game: Joue a:",`  ${users.presence.game ? users.presence.game.name : "Rien"}`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-        .setThumbnail(message.mentions.avatarURl)
+        .setThumbnail(message.author.avatarURl)
         .setTimestamp()
         message.guild.member(users)
         message.channel.send(embed);
