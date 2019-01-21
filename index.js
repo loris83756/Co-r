@@ -76,7 +76,7 @@ if (message.content === prefix + "help") {
 let messageuser = message.content.split(" ");
 let infouser = messageuser[0];
 let userargs = messageuser.slice(1); 
-let muavatarurl =message.users.mentions.avatraURL    
+let muavatarurl =message.users.avatraURL    
     
    if (infouser === prefix + "user-info") {
      let users = message.guild.member(message.mentions.users.first() || message.guild.members.get(userargs[0]));
