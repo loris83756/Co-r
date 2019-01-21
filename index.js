@@ -76,7 +76,6 @@ if (message.content === prefix + "help") {
 let messageuser = message.content.split(" ");
 let infouser = messageuser[0];
 let userargs = messageuser.slice(1); 
-let muavatarurl =message.users.avatraURL    
     
    if (infouser === prefix + "user-info") {
      let user = message.guild.member(message.mentions.users.first() || message.guild.members.get(userargs[0]));
@@ -90,7 +89,7 @@ let muavatarurl =message.users.avatraURL
         .addField(":video_game: Joue a:",`  ${user.presence.game ? user.presence.game.name : "Rien"}`)
         .setColor(0xffa500)
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
-        .setThumbnail(muavatarurl)
+        .setThumbnail(user.displayavatarURL)
         .setTimestamp()
         message.guild.member(user)
         message.channel.send(embed);
