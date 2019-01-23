@@ -168,6 +168,7 @@ let miroirq = miroirargs.join(" ").slice(22);
     .setColor(0xffa500)
     .setThumbnail("http://ekladata.com/JftiL-mR0hOfxXe8OFrYHdu9vPk.gif")
     message.channel.send(embed)
+  }
 //BAN----------------------------------------------------------------------------------------------------------------------     
 let messageban = message.content.split(" ");
 let ban = messageban[0];
