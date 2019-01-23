@@ -152,6 +152,22 @@ message.channel.sendEmbed(embed)
     .setColor(0xffa500)
     message.channel.send(embed)
 } 
+//MIROIR---------------------------------------------------------------------------------------------------------------------------    
+let messagemiroir = message.content.split(" ");
+let miroir = messagemiroir[0];
+let miroirargs = messagemiroir.slice(1); 
+let miroirq = miroirargs.join(" ").slice(22);
+    
+  if (miroir === prefix + "miroir") {
+    var reponse = ["**Oui**","**Non**","**Peut-etre**","**Je ne sais pas**"]
+    var resultat = Math.floor((Math.random() * reponse.length));
+    const embed =new RichEmbed()
+    .setTitle('**__:crystal_ball: Miroir Magique__**')
+    .addField("Question",miroirq)
+    .addField("Réponse:",reponse[resultat])
+    .setColor(0xffa500)
+    .setThumbnail("http://ekladata.com/JftiL-mR0hOfxXe8OFrYHdu9vPk.gif")
+    message.channel.send(embed)
 //BAN----------------------------------------------------------------------------------------------------------------------     
 let messageban = message.content.split(" ");
 let ban = messageban[0];
