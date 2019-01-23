@@ -162,7 +162,7 @@ let miroirargs = messagemiroir.slice(1);
     var resultat = Math.floor((Math.random() * reponse.length));
     const embed =new RichEmbed()
     .setTitle("**__:crystal_ball: Miroir Magique__**")
-    .addField("Question",`${miroirargs}`)
+    .addField("Question", `${miroirargs}`)
     .addField("Réponse:",reponse[resultat])
     .setColor(0xffa500)
     .setThumbnail("http://ekladata.com/JftiL-mR0hOfxXe8OFrYHdu9vPk.gif")
