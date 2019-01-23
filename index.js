@@ -156,14 +156,13 @@ message.channel.sendEmbed(embed)
 let messagemiroir = message.content.split(" ");
 let miroir = messagemiroir[0];
 let miroirargs = messagemiroir.slice(1); 
-let miroirq = miroirargs.join(" ").slice(22);
     
   if (miroir === prefix + "miroir") {
     var reponse = ["**Oui**","**Non**","**Peut-etre**","**Je ne sais pas**"]
     var resultat = Math.floor((Math.random() * reponse.length));
     const embed =new RichEmbed()
     .setTitle("**__:crystal_ball: Miroir Magique__**")
-    .addField("Question",miroirargs)
+    .addField("Question",`${miroirargs}`)
     .addField("Réponse:",reponse[resultat])
     .setColor(0xffa500)
     .setThumbnail("http://ekladata.com/JftiL-mR0hOfxXe8OFrYHdu9vPk.gif")
