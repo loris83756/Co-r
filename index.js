@@ -162,7 +162,7 @@ let miroirq = miroirargs.join(" ").slice(22);
     var reponse = ["**Oui**","**Non**","**Peut-etre**","**Je ne sais pas**"]
     var resultat = Math.floor((Math.random() * reponse.length));
     const embed =new RichEmbed()
-    .setTitle('**__:crystal_ball: Miroir Magique__**')
+    .setTitle("**__:crystal_ball: Miroir Magique__**")
     .addField("Question",miroirq)
     .addField("Réponse:",reponse[resultat])
     .setColor(0xffa500)
