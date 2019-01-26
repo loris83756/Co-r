@@ -18,8 +18,7 @@ bot.on(`guildMemberAdd`,member => {
 })
 //SET GAME-----------------------------------------------------------------------------------------------------------------------
 bot.on('ready',function() {
-bot.user.setPresence({ game: { name: '*help', type: 1 } });
-    bot.user.setStatus(`Steaming`)
+bot.user.setPresence({ game: { name: '*help', type: 3 } });
     console.log ("Connected");
 });
 //HELP---------------------------------------------------------------------------------------------------------------------------
