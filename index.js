@@ -18,7 +18,7 @@ bot.on(`guildMemberAdd`,member => {
 })
 //SET GAME-----------------------------------------------------------------------------------------------------------------------
 bot.on('ready',function() {
-    bot.user.setGame("Commande:*help");
+bot.user.setPresence({ status: 'online', game: { name: '*help' } });
     console.log ("Connected");
 });
 //HELP---------------------------------------------------------------------------------------------------------------------------
