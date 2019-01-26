@@ -111,7 +111,7 @@ message.channel.sendEmbed(embed)
 //SERVEURS-------------------------------------------------------------------------------------------------------------------------    
      if (message.content === prefix + "serveurs") {
          const embed = new RichEmbed()
-        .setTitle(bot.guilds.map(r => r.name + ` |**${r.memberCount}** membres`))
+        .setTitle(bot.guilds.map(r => r.name + ` |**${r.memberCount}** membres \n -----------------`))
         .setTimestamp()
         .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
         .setColor(0xffa500);
