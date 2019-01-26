@@ -34,7 +34,7 @@ if (message.content === prefix + "help") {
       .addField(`*ping`,`:small_orange_diamond: Donne le temps de réaction du bot en ms.`)
       .addField(`**......................................................... \n :hammer:__Commandes modérations__::hammer:**`,` \n **.........................................................** `)
       .addField(`*ban + [utilisateur] + [raison de la sanction]`,`:small_orange_diamond: Permet de bannir des utilisateurs.`)
-      .addField(`*kick + [utilisateur] + [raison de la sanction]`,`:tools: Permet d´expulser des utilisateurs.`)
+      .addField(`*kick + [utilisateur] + [raison de la sanction]`,`:small_orange_diamond: Permet d´expulser des utilisateurs.`)
       .addField(`*mute (Bientot disponible)`,`:tools: Permet de rendre muet des utilisateurs.`)
       .addField(`**......................................................... \n :video_game:__Commandes jeu:__:video_game:**`,` \n **.........................................................**`)
       .addField(`*dé`,`:small_orange_diamond: Tire un nombre de 1 a 6.`)
