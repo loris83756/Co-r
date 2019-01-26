@@ -18,7 +18,7 @@ bot.on(`guildMemberAdd`,member => {
 })
 //SET GAME-----------------------------------------------------------------------------------------------------------------------
 bot.on('ready',function() {
-bot.user.setActivity(`:bee: *help | ${bot.guilds.size} serveurs`, { type: `STREAMING`, url: 'https://www.twitch.tv/loris83756'})
+bot.user.setActivity(`Prefix: * | ${bot.users.size} users | ${bot.guilds.size} serveurs |`, { type: `STREAMING`, url: 'https://www.twitch.tv/loris83756'})
     console.log ("Connected");
 });
 //HELP---------------------------------------------------------------------------------------------------------------------------
