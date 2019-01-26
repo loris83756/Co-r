@@ -18,7 +18,7 @@ bot.on(`guildMemberAdd`,member => {
 })
 //SET GAME-----------------------------------------------------------------------------------------------------------------------
 bot.on('ready',function() {
-bot.user.setActivity("*help", { type: `WATCHING`})
+bot.user.setActivity("*help", { type: `STREAMING`, url: 'https://www.twitch.tv/loris83756'})
     console.log ("Connected");
 });
 //HELP---------------------------------------------------------------------------------------------------------------------------
