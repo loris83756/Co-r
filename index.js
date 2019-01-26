@@ -64,7 +64,7 @@ if (message.content === prefix + "help") {
                 .setTitle(':information_source: **Informations:**')
                 .addField(`:satellite: Serveurs:`, `${bot.guilds.size}`)
                 .addField(`:grinning: Users`, `${bot.users.size}`)
-                .addField(`:vs: Version:`, `0.0.1 alpha`)
+                .addField(`:vs: Version:`, `Bêta 1.0.0`)
                 .addField(`:computer: Developpeur`, `loris83756#0001`)
                 .addField(`:pencil: Codage utilisé:`, `Node JS 11.4.2`)
                 .addField(`:regional_indicator_h: Hébergeur:`, `Heroku`, true)
