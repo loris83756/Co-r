@@ -39,7 +39,7 @@ if (message.content === prefix + "help") {
       .addField(`**......................................................... \n :video_game:__Commandes jeu:__:video_game:**`,` \n **.........................................................**`)
       .addField(`*dé`,`:small_orange_diamond:Tire un nombre de 1 a 6.`)
       .addField(`*pile/face`,`:small_orange_diamond:Tire pile ou face.`)
-      .addField(`*miroir + [question]`,`:small_orange_diamond:Répond a la question que vous posez.`)
+      .addField(`*miroir + [question] (debug en cours)`,`:small_orange_diamond:Répond a la question que vous posez.`)
       .addField(`**......................................................... \n :tv:__Autres fonctionalitées:__:tv:**`,` \n **.........................................................**`)
       .addField(`Salut`,`:small_orange_diamond:Dites Salut et le Bot vous dira Bonjour.`)
       .addField(`Bienvenue/a quitté le serveur`,`:small_orange_diamond: Dès qu une personne rejoindra votre serveur le Bot lui souhaitera la Bienvenue et à son départ le Bot dira @...#0000 a quitté le serveur. \n :exclamation:Attention il faut posséder un salon nouveau-départ pour pouvoir avoir accès à cette fonctionnalité.:exclamation:`)
