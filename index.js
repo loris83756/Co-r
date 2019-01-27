@@ -19,7 +19,7 @@ bot.on(`guildMemberAdd`,member => {
 //SET GAME-----------------------------------------------------------------------------------------------------------------------
 bot.on('ready',function() {
 bot.user.setActivity(`Prefix: * | ${bot.users.size} users | ${bot.guilds.size} serveurs |`, { type: `STREAMING`, url: 'https://www.twitch.tv/loris83756'})
-    console.log ("Connected");
+    console.log("Connecter");
 });
 //HELP---------------------------------------------------------------------------------------------------------------------------
 bot.on('message', message => {
@@ -46,10 +46,11 @@ if (message.content === prefix + "help") {
       .addField(`Auto rôle Membres `,`:small_orange_diamond:Ajoute automatiquement le rôle Membres a tout les nouveaux de votre serveur. \n :exclamation: Attention il faut posséder le rôle Membres.:exclamation:`)
       .setColor(0xffa500)
       .setTimestamp()
-      .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+      .setFooter("Beeing","https://cdn.discordapp.com/atta`chments/511129543768145930/531464974548205568/Beeing.jpg")
     message.author.send(embed);
+    console.log(`Commade help effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
   }
-    
+     
     if (message.content === prefix + "help") {
      const embed = new RichEmbed()
       .setTitle('Les commandes vous ont été envoyés en MP :mailbox_with_mail:')
