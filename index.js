@@ -246,7 +246,7 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
         return message.channel.send("**:x: Seul loris83756 peut utiliser cette commande.**")
     }
         
-      bot.user.setPresence({ activity: { name: 'Arrêt en cours ...' }, status: 'dnd' })
+        bot.user.setActivity(`Arrêt en cours ... `, { type: `PLAYING`})
           Crrrrrrraaassshhhshhshshshshshshsh
 }
     
