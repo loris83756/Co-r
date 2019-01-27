@@ -238,6 +238,12 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
     message.channel.send(`${clearargs[0]} messages ont était suprimer.`).then(msg => msg.delete(2000));
 })
 }
+      if (message.content === prefix + "off") {
+          if(message.author.id === '295211285405237248')
+          bot.user.setGame("Arret en cours...");
+          Crrrrrrraaassshhhshhshshshshshshsh
+      }
+          
 //TOKEN-----------------------------------------------------------------------------------------------------------------------------
 }); 
 bot.login(process.env.TOKEN);
