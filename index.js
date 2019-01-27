@@ -241,7 +241,8 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
       if (message.content === prefix + "off") {
           if(message.author.id === '295211285405237247')
               return message.channel.send("**:x: Seul loris83756 peut utiliser cette commande**")
-          bot.user.setGame("Arret en cours...");
+          bot.user.setGame("Arret en cours..."){
+          }
           Crrrrrrraaassshhhshhshshshshshshsh
       }
           
