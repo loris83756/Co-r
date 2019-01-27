@@ -12,8 +12,22 @@ bot.on("guildMemberRemove" , member => {
     member.guild.channels.find("name","nouveau-départ").send(`**${member} a quitté le serveur **`)
 })
 // AUTO ROLE---------------------------------------------------------------------------------------------------------------------
+
+let messagerole = message.content.split(" ");
+let arole = messagerole[0];
+let roleargs = messagerole.slice(1); 
+
+if (message.content === prefix + "autorole") {
+let role = roleargs.join(" ").slice(22);
+if(!role)
+return message.channel.send("Tu dois indiquer un role")
+var addrole = member.guild.roles.find(`name`, role);
+if (!addrole)
+return message.channel.send("**Je ne trouve pas ce role**")
+}
+
 bot.on(`guildMemberAdd`,member => {
-    var role = member.guild.roles.find(`name`, `Membres`);
+    var role = member.guild.roles.find(`name`, role);
     member.addRole(role)
 })
 //SET GAME-----------------------------------------------------------------------------------------------------------------------
