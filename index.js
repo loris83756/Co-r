@@ -27,9 +27,9 @@ bot.on('message', message => {
 if (message.content === prefix + "help") {
     const embed = new RichEmbed()
       .setTitle('**......................................................... \n :bee:__Commandes utiles__::bee:** \n **........................................................**')
-      .addField(`*bot-info`,`:small_orange_diamond:Donne des informations sur le bot.`)
-      .addField(`*user-info + [user]`,`:small_orange_diamond:Donne des informations sur l'utilisateur mentioner. `)
-      .addField(`*serveur-info`,`:small_orange_diamond:Donne des informations sur le serveur ou est effectué cette commande. `)
+      .addField(`*info-bot`,`:small_orange_diamond:Donne des informations sur le bot.`)
+      .addField(`*info-user + [user]`,`:small_orange_diamond:Donne des informations sur l'utilisateur mentioner. `)
+      .addField(`*info-serveur`,`:small_orange_diamond:Donne des informations sur le serveur ou est effectué cette commande. `)
       .addField(`*serveurs`,`:small_orange_diamond:Donne la liste de tous les serveurs et du nombre de membres ou se trouve Beeing#4440.`)
       .addField(`*clear + [nombre]`,`:small_orange_diamond:Permet de supprimer le nombre de message indiquer (max 100). `)
       .addField(`*ping`,`:small_orange_diamond:Donne le temps de réaction du bot en ms.`)
@@ -61,7 +61,7 @@ if (message.content === prefix + "help") {
      message.channel.send(embed)
     }
     //INFO BOT-----------------------------------------------------------------------------------------------------------------------
-    if (message.content === prefix + "bot-info") {
+    if (message.content === prefix + "info-bot") {
   const embed = new RichEmbed()
                 .setTitle(':information_source: **Informations:**')
                 .addField(`:satellite: Serveurs:`, `${bot.guilds.size}`)
@@ -70,7 +70,7 @@ if (message.content === prefix + "help") {
                 .addField(`:computer: Developpeur`, `loris83756#0001`)
                 .addField(`:pencil: Codage utilisé:`, `Node JS 11.4.2`)
                 .addField(`:regional_indicator_h: Hébergeur:`, `Heroku`, true)
-                .addField(`:ok_hand: Server Support:`, `[Cliquer ici](https://discord.gg/fERCmfe)`) 
+                .addField(`:ok_hand: Server Support:`, `[Cliquer ici](https://discord.gg/JXz8YTR)`) 
                 .addField(`:bee: Inviter Beeing:`, `[Cliquer ici](https://discordapp.com/oauth2/authorize?client_id=515518385686183937&permissions=8&scope=bot)`) 
                 .setTimestamp()
                 .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
@@ -82,7 +82,7 @@ let messageuser = message.content.split(" ");
 let infouser = messageuser[0];
 let userargs = messageuser.slice(1); 
     
-   if (infouser === prefix + "user-info") {
+   if (infouser === prefix + "info-user") {
      let user = message.guild.member(message.mentions.users.first() || message.guild.members.get(userargs[0]));
     if (!user) 
     return message.channel.send("**:information_source: Vous devez mentionné un utilisateur.**"); 
@@ -100,7 +100,7 @@ let userargs = messageuser.slice(1);
         message.channel.send(embed);
     }
     //SERVEUR INFO--------------------------------------------------------------------------------------------------------------------
-    if (message.content === prefix + "serveur-info") {
+    if (message.content === prefix + "info-serveur") {
     const embed = new RichEmbed()
     .setTitle("**:information_source: Information du Serveur**") 
     .addField(":satellite: Nom du serveur", message.guild.name)
