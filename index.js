@@ -240,11 +240,10 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
 }
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
      if (message.content === prefix + "off") {
-          let id = message.author.id === '295211285405237248';{
+          let id = message.author.id === '295211285405237248';
         if(!id) 
         return message.channel.send("**:x: Seul loris83756 peut utiliser cette commande.**")
               bot.user.setActivity(`Arret en cours ... `, { type: `PLAYING`})
-    console.log("OFF");
      }
     
     if (message.content === prefix + "off") {
