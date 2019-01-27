@@ -240,7 +240,7 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
 }
     
     if (message.content === prefix + "off") {
-        let id = message.author.id === '295211285405237247';
+        let id = message.author.id === '295211285405237248';
         if(!id) {
         return message.channel.send("**:x: Seul loris83756 peut utiliser cette commande**")
         }
