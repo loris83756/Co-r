@@ -261,7 +261,7 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
     }
         
         bot.user.setActivity(`Arrêt en cours ... `, { type: `PLAYING`})
-          Crrrrrrraaassshhhshhshshshshshshsh
+          OFF
 }
     
 //TOKEN-----------------------------------------------------------------------------------------------------------------------------
