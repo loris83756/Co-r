@@ -251,6 +251,32 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
      console.log(`Commade clear effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
 })
 }
+//COMMANDE EN TEST--------------------------------------------------------------------------------------------------------------------------
+ let messagesondage = message.content.split(" ");
+let sondage = messagesondage[0];
+let sondageargs = messagesondage.slice(1); 
+  
+if (sondage === prefix + "sondage") {
+    return message.channel.send("**:information_source: Vous devez posez une question.**");
+    let sondagequestion = sondageargs.join(" ").slice(22);
+    if(!message.member.hasPermission("KICK_MEMBERS")) 
+    return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");
+    const embed = new RichEmbed()
+    .setTitle("**Sondage.**")
+    .addField(":wave: Question poser par:",`${message.author}`)
+    .addField("Question:",`${sondagequestion}`)
+    .addField("Question poser le:",message.createdAt)
+    .setColor(0xffa500)
+    .setFooter("Beeing","https://cdn.discordapp.com/attachments/511129543768145930/531464974548205568/Beeing.jpg")
+    message.guild.member(sondagequestion);
+message.channel.send(embed);
+console.log(`Commade sondage effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)   
+}
+    
+    
+    
+    
+    
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
     
     if (message.content === prefix + "off") {
@@ -261,7 +287,7 @@ message.channel.bulkDelete(clearargs[0]).then(() => {
     }
         
         bot.user.setActivity(`Arrêt en cours ... `, { type: `PLAYING`})
-          OFF
+          STOP BOT
 }
     
 //TOKEN-----------------------------------------------------------------------------------------------------------------------------
