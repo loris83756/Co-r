@@ -257,7 +257,7 @@ let sondage = messagesondage[0];
 let sondageargs = messagesondage.slice(1); 
   
 if (sondage === prefix + "sondage") {
-    if (!sondageargs[0]) 
+    if (!sondageargs[1]) 
     return message.channel.send("**:information_source: Vous devez posez une question.**");
     let sondagequestion = sondageargs.join(" ").slice(22);
     if(!message.member.hasPermission("KICK_MEMBERS")) 
