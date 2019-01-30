@@ -287,7 +287,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
     }
         
         bot.user.setActivity(`Arrêt en cours ... `, { type: `PLAYING`})
-          STOP BOT
+          BOTOOF
 }
     
 //TOKEN-----------------------------------------------------------------------------------------------------------------------------
