@@ -275,7 +275,13 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 }
     
     
-    
+    if (message.content === prefix + "test") {
+    const embed =new RichEmbed()
+    .setTitle('**||test||*')
+    .setColor(0xffa500)
+    message.channel.send(embed)
+    console.log(`Commade test effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)  
+}
     
     
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
