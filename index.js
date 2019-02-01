@@ -279,7 +279,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
     if (message.content === prefix + "démineur") {
     const embed =new RichEmbed()
     .setTitle('**Démineur**')
-    .addField("||:bomb:|| ||:one:|| ||:two:|| ||:one:|| ||:bomb:|| \n ||:one:|| ||:one:|| ||:one:|| ||:bomb:|| ||:one:|| \n||:two:|| ||:two:|| ||:one:|| ||:bomb:|| ||:one:|| \n||:three:|| ||:two:|| ||:one:|| ||:one:|| ||:one:||", "Ne tombez pas sur l'une des bombes (4 :bomb:)")
+    .addField("||:bomb:|| ||:one:|| ||:two:|| ||:one:|| ||:bomb:|| \n||:one:|| ||:one:|| ||:one:|| ||:bomb:|| ||:one:|| \n||:two:|| ||:two:|| ||:one:|| ||:bomb:|| ||:one:|| \n||:three:|| ||:two:|| ||:one:|| ||:one:|| ||:one:||", "Ne tombez pas sur l'une des bombes (4 :bomb:)")
     .setColor(0xffa500)
     message.channel.send(embed)
     console.log(`Commade démineur effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)  
