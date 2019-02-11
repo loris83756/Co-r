@@ -293,16 +293,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
     message.channel.send(embed)
     console.log(`Commade démineur effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)  
 }
-
-if (message.content === prefix + "test") {
-    const embed = new RichEmbed() 
-            .addField(`:bee:....................................................`,` Bienvenue ${message.author} \n sur **${message.guild.name}**. \n **....................................................**`)
-            .setImage("https://cdn.discordapp.com/attachments/511129543768145930/544509143566909453/4565662.png")
-            .setThumbnail(message.author.avatarURL)
-            .setTimestamp()
-            .setColor(0xffa500);
-             message.channel.send(embed);
-        }
+        
         
       if (message.content === prefix + "hébergeur h") {
     let id = message.author.id === '295211285405237248';{
@@ -320,6 +311,7 @@ if (message.content === prefix + "test") {
              message.channel.send(embed);
 
 }
+        
         
               if (message.content === prefix + "hébergeur pi") {
     let id = message.author.id === '295211285405237248';{
