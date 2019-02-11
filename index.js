@@ -304,8 +304,6 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
     
      const embed = new RichEmbed() 
             .setTitle("Hébergeur: Heroku")
-            .setImage("https://cdn.discordapp.com/attachments/511129543768145930/544509143566909453/4565662.png")
-            .setThumbnail(message.author.avatarURL)
             .setTimestamp()
             .setColor(0xffa500);
              message.channel.send(embed);
@@ -322,8 +320,6 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
     
      const embed = new RichEmbed() 
             .setTitle("Hébergeur: Rasberry Pi ")
-            .setImage("https://cdn.discordapp.com/attachments/511129543768145930/544509143566909453/4565662.png")
-            .setThumbnail(message.author.avatarURL)
             .setTimestamp()
             .setColor(0xffa500);
              message.channel.send(embed);
@@ -333,7 +329,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
     
 if (message.content === prefix + "off") {
-    let id = message.author.id === '295211285405237248';{
+    let id = message.author.id === '375966230265462785';{
     if(!id) 
     return message.channel.send("**:x: Seul loris83756 peut utiliser cette commande.**")
     console.log(`Commade off /!\ effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
