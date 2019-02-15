@@ -335,13 +335,14 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       if (des === prefix + "D.E.S") {
       if(!channel)
       return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
-      if (!desargs)
+      if (!desargs[1])
       return message.send("**Vous devez écrire un message a envoyé**")
       var desembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, message)
+      .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
-      .setFooter(message.guild.name, message.guild.avatarURL)
+      .setFooter(message.guild.name, message.guild.iconURL)
       bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
     }
         
