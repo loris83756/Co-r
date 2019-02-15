@@ -326,13 +326,16 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 
 }
         
-  if (message.content === prefix + "D.E.S") {
-      let desargs = message.content.split(" ").slice(1)
+
+      let messagedes = message.content.split(" ");
+      let des = messagedes[0];
+      let desargs = messagekick.slice(1); 
       let channel = message.guild.channels.find('name', 'd-e-s')
-      let message = desargs.join(" ");
+      
+      if (des === prefix + "D.E.S") {
       if(!channel)
       return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
-      if (!message)
+      if (!desargs)
       return message.send("**Vous devez écrire un message a envoyé**")
       var desembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, message)
