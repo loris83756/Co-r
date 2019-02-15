@@ -327,7 +327,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 }
         
   if (desargs === prefix + "D.E.S") {
-      let desargs = message.content.split(" ").slice(1);
+      let desargs = message.content.split(" ").slice(1)
       let channel = message.guild.channels.find('name', 'd-e-s')
       let message = desargsjoin(" ");
       if(!channel)
