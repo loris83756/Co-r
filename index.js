@@ -331,7 +331,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       let channel = message.guild.channels.find('name', 'd-e-s')
       let message = desargsjoin(" ");
       if(!channel)
-      return message.send("**Je ne trouve pas le channel ``d-e-s``.**)
+      return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
       if (!message)
       return message.send("**Vous devez écrire un message a envoyé**")
       var D.E.Sembed = new RichEmbed()
