@@ -326,6 +326,22 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 
 }
         
+            if (message.content === prefix + "D.E.S") {
+      let desargs = message.content.split(" ").slice(1);
+      let channel = message.guild.channels.find('name', 'd-e-s')
+      let message = desargsjoin(" ");
+      if(!channel)
+      return message.send("**Je ne trouve pas le channel ``d-e-s``.**)
+      if (!message)
+      return message.send("**Vous devez écrire un message a envoyé**")
+      var D.E.Sembed = new RichEmbed()
+      .addField(`:bee: Utilisateur: **${message.author.username}**`, message)
+      setColor(0xffa500)
+      .setTimestamp()
+     .setFooter(message.guild.name, message.guild.avatarURL)
+     bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(D.E.Sembed))
+    }
+        
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
     
 if (message.content === prefix + "off") {
