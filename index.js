@@ -335,7 +335,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       if (des === prefix + "D.E.S") {
       if(!channel)
       return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
-      if (!desargs)
+      if (!desargs[1])
       return message.send("**Vous devez écrire un message a envoyé**")
       var desembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, desargs)
