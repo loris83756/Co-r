@@ -338,7 +338,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        if (!desargs)
        return message.send("**Vous devez écrire un message a envoyé**")
        let desmessage = desargs.join(" ").slice(0);
-       let iddes = message.author.id === '295211285405237247';{
+       let iddes = message.author.id === '295211285405237248';{
        if(!iddes)
        var desembed = new RichEmbed()
        return desembed
