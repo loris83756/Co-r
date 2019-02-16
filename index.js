@@ -183,9 +183,7 @@ let miroirargs = messagemiroir.slice(1);
   if (miroir === prefix + "miroir") {
     var reponse = ["**Oui**","**Non**","**Peut-etre**","**Je ne sais pas**"]
     var resultat = Math.floor((Math.random() * reponse.length));
-    let miroirmessage = miroirargs.join(" ").slice(22);
-     if(!message.member.hasPermission("BAN_MEMBERS")) 
-    return message.channel.send("**:x:Vous n'avez pas la permissin de faire ceci.**");            
+    let miroirmessage = miroirargs.join(" ").slice(1);
     const embed =new RichEmbed()
     .setTitle("**__:crystal_ball: Miroir Magique__**")
     .addField("Question", `${miroirmessage}`)
