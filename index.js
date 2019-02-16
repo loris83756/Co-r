@@ -327,7 +327,6 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 
 }
         
-
      let messagedes = message.content.split(" "); 
      let des = messagedes[0]; 
      let desargs = messagedes.slice(1);
@@ -338,9 +337,8 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
        if (!desargs)
        return message.send("**Vous devez écrire un message a envoyé**")
-       let desmessage = desargs.join(" ").slice(0);
        var desembed = new RichEmbed()
-      .addField(`:bee: Utilisateur: **${message.author.username}**`, desmessage)
+      .addField(`:bee: Utilisateur: **${message.author.username}**`, messagedes)
       .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
