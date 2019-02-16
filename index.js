@@ -338,15 +338,15 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        if (!desargs)
        return message.send("**Vous devez écrire un message a envoyé**")
        let desmessage = desargs.join(" ").slice(0);
-       let iddes = message.author.id === '295211285405237248';{
-       if(!iddes)
        var desembed = new RichEmbed()
-       return desembed
       .addField(`:bee: Utilisateur: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
       .setFooter(`Ecrit de: ${message.guild.name}`, `${message.guild.iconURL}`)
+       let iddes = message.author.id === '295211285405237247';{
+       if(!iddes)
+       return desembed
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        }
        var ldesembed = new RichEmbed()
