@@ -329,22 +329,22 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 
       let messagedes = message.content.split(" ");
       let des = messagedes[0];
-      let desargs = messagekick.slice(1); 
+      let desargs = messagedes.slice(1); 
       let channel = message.guild.channels.find('name', 'd-e-s')
       
       if (des === prefix + "D.E.S") {
-      if(!channel)
-      return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
-      if (!desargs[1])
-      return message.send("**Vous devez écrire un message a envoyé**")
-      var desembed = new RichEmbed()
+       if(!channel)
+       return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
+       if (!desargs[1])
+       return message.send("**Vous devez écrire un message a envoyé**")
+       var desembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, desargs)
       .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
       .setFooter(`Ecrit de: ${message.guild.name}`,`${message.guild.iconURL}`)
-      bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
-      console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
+       bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
+       console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
         
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
