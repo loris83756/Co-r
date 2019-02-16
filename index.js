@@ -341,13 +341,13 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        let iddes = message.author.id === '295211285405237247';{
        if(!iddes)
        return
-       var desembed = new RichEmbed()
+       var ldesembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
       .setFooter(`Ecrit de: ${message.guild.name}`, `${message.guild.iconURL}`)
-       bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
+       bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(ldesembed))
        }
        var desembed = new RichEmbed()
       .addField(`:bee: Owner: **${message.author.username}**`, desmessage)
