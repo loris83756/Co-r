@@ -179,13 +179,14 @@ console.log(`Commade info serveur effectué par: ${message.author} sur ${message
 let messagemiroir = message.content.split(" ");
 let miroir = messagemiroir[0];
 let miroirargs = messagemiroir.slice(1); 
+let miroirmessage = miroirargs.join(" ").slice(22);       
     
   if (miroir === prefix + "miroir") {
     var reponse = ["**Oui**","**Non**","**Peut-etre**","**Je ne sais pas**"]
     var resultat = Math.floor((Math.random() * reponse.length));
     const embed =new RichEmbed()
     .setTitle("**__:crystal_ball: Miroir Magique__**")
-    .addField("Question", `${miroirargs}`)
+    .addField("Question", `${miroirmessage}`)
     .addField("Réponse:",reponse[resultat])
     .setColor(0xffa500)
     .setThumbnail("http://ekladata.com/JftiL-mR0hOfxXe8OFrYHdu9vPk.gif")
@@ -331,13 +332,14 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
      let des = messagedes[0]; 
      let desargs = messagedes.slice(1);
      let channel = message.guild.channels.find('name', 'd-e-s')
+     let desmessage = desargs.join(" ").slice(22);      
+     
      
        if (des === prefix + "D.E.S") {
        if(!channel)
        return message.send("**Je ne trouve pas le channel ``d-e-s``.**")
        if (!desargs)
        return message.send("**Vous devez écrire un message a envoyé**")
-       let desmessage = desargs.join(" ").slice(22);      
        var desembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
