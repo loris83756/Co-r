@@ -183,7 +183,7 @@ let miroirargs = messagemiroir.slice(1);
   if (miroir === prefix + "miroir") {
     var reponse = ["**Oui**","**Non**","**Peut-etre**","**Je ne sais pas**"]
     var resultat = Math.floor((Math.random() * reponse.length));
-    let miroirmessage = miroirargs.join(" ").slice(1);
+    let miroirmessage = miroirargs.join(" ").slice(0);
     const embed =new RichEmbed()
     .setTitle("**__:crystal_ball: Miroir Magique__**")
     .addField("Question", `${miroirmessage}`)
