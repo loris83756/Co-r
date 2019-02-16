@@ -339,7 +339,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        return message.send("**Vous devez écrire un message a envoyé**")
        let desmessage = desargs.join(" ").slice(0);       
        var desembed = new RichEmbed()
-      .addField(`:bee: Utilisateur: **${message.author.username}**`, messagedes)
+      .addField(`:bee: Utilisateur: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
