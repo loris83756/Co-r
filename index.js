@@ -344,7 +344,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
-      .setFooter(`Ecrit de: ${message.guild.name}`,` ${message.guild.iconURL}`)
+      .setFooter(`Ecrit de: ${message.guild.name}`, `${message.guild.iconURL}`)
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
