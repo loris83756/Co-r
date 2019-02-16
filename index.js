@@ -351,7 +351,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setColor(0xff0000)
       .setTimestamp()
       .setFooter(`Ecrit de: ${message.guild.name}`, `${message.guild.iconURL}`)
-       let iddes = message.author.id === '295211285405237248';{
+       let iddes = message.author.id === '295211285405237247';{
        if(!iddes)
        return bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)           
