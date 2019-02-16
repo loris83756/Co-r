@@ -346,7 +346,6 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setFooter(`Ecrit de: ${message.guild.name}`, `${message.guild.iconURL}`)
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)       
-       }
        var ldesembed = new RichEmbed()
       .addField(`:bee: Owner: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
