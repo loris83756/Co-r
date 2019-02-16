@@ -327,8 +327,8 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 }
         
 
-     let messagedes = message.content.split(""); 
-     let des = messagedes[0]; 
+     let messagedes = message.content.split(" "); 
+     let des = messagedes[1]; 
      let desargs = messagekick.slice(1);
      let channel = message.guild.channels.find('name', 'd-e-s')
      
