@@ -344,7 +344,6 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setColor(0xffa500)
       .setTimestamp()
       .setFooter(`Ecrit de: ${message.guild.name}`, `${message.guild.iconURL}`)
-       bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)       
        var ldesembed = new RichEmbed()
       .addField(`:bee: Owner: **${message.author.username}**`, desmessage)
@@ -355,6 +354,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        let iddes = message.author.id === '295211285405237248';{
        if(!iddes)
        return desembed
+        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        }
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(ldesembed))       
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
