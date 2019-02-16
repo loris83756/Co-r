@@ -338,8 +338,8 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        if (!desargs)
        return message.send("**Vous devez écrire un message a envoyé**")
        let desmessage = desargs.join(" ").slice(0);
-       let id = message.author.id === '295211285405237247';{
-       if(!id)
+       let iddes = message.author.id === '295211285405237247';{
+       if(!iddes)
        return
        var desembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, desmessage)
@@ -362,8 +362,8 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
     
 if (message.content === prefix + "off") {
-    let id = message.author.id === '295211285405237248';{
-    if(!id) 
+    let idoff = message.author.id === '295211285405237248';{
+    if(!idoff) 
     return message.channel.send("**:x: Seul loris83756 peut utiliser cette commande.**")
     console.log(`Commade off /!\ effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
 }
