@@ -350,11 +350,22 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setColor(0xff0000)
       .setTimestamp()
       .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
-       let iddes = message.author.id === '295211285405237248';{
+        var mdesembed = new RichEmbed()
+      .addField(`👮 Modérateur: **${message.author.username}**`, desmessage)
+      .setThumbnail(message.author.avatarURL)
+      .setColor(0x4000FF)
+      .setTimestamp()
+      .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
+       let iddes = message.author.id === '295211285405237247';{
        if(!iddes)
-       return bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
+       return let iddes = message.author.id === '295211285405237248';{
+       if(!iddes)
+       bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)           
        }
+        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(mdesembed))       
+       console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
+    }                
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(ldesembed))       
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
