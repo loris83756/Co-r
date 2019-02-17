@@ -338,29 +338,34 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        if (!desargs)
        return message.send("**Vous devez écrire un message a envoyé**")
        let desmessage = desargs.join(" ").slice(0);
+               
        var desembed = new RichEmbed()
       .addField(`:bee: Utilisateur: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
       .setColor(0xffa500)
       .setTimestamp()
       .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
+       
        var ldesembed = new RichEmbed()
       .addField(`:crown: Owner: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
       .setColor(0xff0000)
       .setTimestamp()
       .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
-        var mdesembed = new RichEmbed()
+       
+       var mdesembed = new RichEmbed()
       .addField(`👮 Modérateur: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
       .setColor(0x4000FF)
       .setTimestamp()
       .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
+       
        let iddesl = message.author.id === '295211285405237247';{
        if(!iddesl)
-       return 
+       return
        let iddesm = message.author.id === '295211285405237248';{
        if(!iddesm)
+       return
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)           
        }
