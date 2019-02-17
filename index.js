@@ -327,7 +327,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
 
 }
         
-     let messagedes = message.content.split(" "); 
+let messagedes = message.content.split(" "); 
      let des = messagedes[0]; 
      let desargs = messagedes.slice(1);
      let channel = message.guild.channels.find('name', 'd-e-s')     
@@ -346,6 +346,10 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setTimestamp()
       .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
        
+       let iddesl = message.author.id === '295211285405237247';{
+       if(!iddesl)
+       return
+
        var ldesembed = new RichEmbed()
       .addField(`:crown: Owner: **${message.author.username}**`, desmessage)
       .setThumbnail(message.author.avatarURL)
@@ -353,28 +357,14 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setTimestamp()
       .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
        
-       var mdesembed = new RichEmbed()
-      .addField(`👮 Modérateur: **${message.author.username}**`, desmessage)
-      .setThumbnail(message.author.avatarURL)
-      .setColor(0x4000FF)
-      .setTimestamp()
-      .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
-       
        let iddesl = message.author.id === '295211285405237247';{
        if(!iddesl)
-       return let iddesm = message.author.id === '295211285405237248';{
-       if(!iddesm)
-       return
-       bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
+       return bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)           
-       }
-        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(mdesembed))       
-       console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
-    }                
+       }      
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(ldesembed))       
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
-    }
-        
+    }       
 //OFF---------------------------------------------------------------------------------------------------------------------------------------
     
 if (message.content === prefix + "off") {
