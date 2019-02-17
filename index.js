@@ -362,8 +362,7 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
        
        let iddesl = message.author.id === '295211285405237247';{
        if(!iddesl)
-       return
-       let iddesm = message.author.id === '295211285405237248';{
+       return let iddesm = message.author.id === '295211285405237248';{
        if(!iddesm)
        return
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
