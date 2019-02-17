@@ -356,11 +356,11 @@ console.log(`Commade sondage effectué par: ${message.author} sur ${message.guil
       .setColor(0x4000FF)
       .setTimestamp()
       .setFooter(`Envoyé de: ${message.guild.name}`, `${message.guild.iconURL}`)
-       let iddes = message.author.id === '295211285405237247';{
-       if(!iddes)
+       let iddesl = message.author.id === '295211285405237247';{
+       if(!iddesl)
        return 
-       let iddes = message.author.id === '295211285405237248';{
-       if(!iddes)
+       let iddesm = message.author.id === '295211285405237248';{
+       if(!iddesm)
        bot.channels.findAll('name', 'd-e-s').map(channel => channel.send(desembed))
        console.log(`Commade D.E.S effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)           
        }
