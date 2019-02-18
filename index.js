@@ -4,5 +4,10 @@ const { Client, RichEmbed } = require('discord.js');
 
 var prefix = ("-")
 
-bot.login(proces.env.TOKEN)
+if(message.content === prefix + "test") {
+  message.send("Test ok")
+}
+    
+}); 
+bot.login(process.env.TOKEN);
 
