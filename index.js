@@ -77,6 +77,13 @@ let eventargs = messageevent.slice(1);
     console.log(`Commade help effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`) 
   }   
  
+     
+       if (message.content === "<@295211285405237248>") {
+    const hembed =new RichEmbed()
+    .setTitle("**:x: LORIS N'AIME PAS LES MENTIONS MENTIONEZ UN AUTRE MEMBRE DU STAFF ! :x: \n @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 @ewenPOLO#8070 **")
+    message.channel.send(hembed)
+    console.log(`Commade help effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`) 
+  }  
       
   var messageuser = message.content.split(" ");
   var infouser = messageuser[0];
