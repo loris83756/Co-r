@@ -77,7 +77,7 @@ let eventargs = messageevent.slice(1);
     console.log(`Commade help effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`) 
   }   
   
-       if (message.content === "@loris83756") {
+       if (message.content === "<@295211285405237248>") {
     const hembed =new RichEmbed()
     .setTitle("**:x: LORIS N'AIME PAS LES MENTION MENTIONEZ @ewenPOLO#8070 :x: !!!!!!**")
     message.channel.send(hembed)
@@ -94,8 +94,8 @@ let eventargs = messageevent.slice(1);
     return message.channel.send("**:information_source: Vous devez mentionné un utilisateur.**"); 
         const iuembed = new RichEmbed()
         .setTitle(`**__:information_source: Info User__**`) 
-        .addField(`**:door: Rejoin le:**`, message.member.joinedAt)
-        .addField("**:bookmark_tabs: Roles que tu posséde sur ce serveur:**",message.member.roles.map(roles =>`${roles.name}`).join(', '))
+        .addField(`**: Rejoin le:**`, message.member.joinedAt)
+        .addField("** Roles que tu posséde sur ce serveur:**",message.member.roles.map(roles =>`${roles.name}`).join(', '))
         .setColor((Math.floor(Math.random() * 16777214) + 1))
         .setThumbnail(message.mentions.users.first().avatarURL)
         .setTimestamp()
