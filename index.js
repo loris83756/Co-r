@@ -98,15 +98,5 @@ let eventargs = messageevent.slice(1);
         console.log(`Commade info user effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     } 
       
-             if (message.content === prefix + "raph") {
-    const hembed =new RichEmbed()
-    .setTitle("**JE SUIS RAPH**")
-    .addField("Raph n'est plus de nos jour...","Pour lui rendre hommage mettez cette image en photo de profil et faite 1 minute de silence.")
-    .addField("Musique pour la minute de silence:",(`[Je suis raph](https://youtu.be/McCDWYgVyps)`)
-    .setImage("https://media.discordapp.net/attachments/546735810599190529/548495627755978777/578456.png?width=400&height=186")
-    .setColor(Math.floor(Math.random() * 16777214) + 1)
-    message.channel.send(hembed)
-    console.log(`Commade raph effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`) 
-      
 });
 bot.login(process.env.TOKEN);
