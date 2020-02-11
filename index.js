@@ -8,12 +8,9 @@ bot.on('ready',function() {
     console.log("Connecter");
 })
   
-bot.on('message', message => {
-  if (message.content === prefix + "corona") {
-     var role = member.guild.roles.find(`name`, `corona`);
-      member.addRole(role)   
-  }
-      
+bot.on("guildMemberAdd" , member => {
+    member.guild.channels.find("name","👋nouveaux-départs").send(`${member} est infecté`)
+})
 
     
 }); 
