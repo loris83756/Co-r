@@ -6,7 +6,7 @@ var prefix = ("$")
       
       
 bot.on('ready',function() {
-bot.user.setActivity(`Prefix: $ | ${bot.users.size} users | ${bot.guilds.size} serveurs |`, { type: `STREAMING`, url: 'https://www.twitch.tv/ewenasse'})
+      bot.user.setActivity(`vous contaminer`, { type: `PLAYING`})
     console.log("Connecter");
 })
       
