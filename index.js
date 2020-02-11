@@ -11,8 +11,7 @@ bot.on('ready',function() {
 bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","👋nouveaux-départs").send(`${member} est infecté`)
 })
-
     
-}); 
+); 
 bot.login(process.env.TOKEN);
 
