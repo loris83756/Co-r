@@ -22,5 +22,5 @@ bot.on('ready',function() {
     console.log("Connecter");
 })
             
-});
+}); 
 bot.login(process.env.TOKEN);
