@@ -5,7 +5,7 @@ var prefix = ("$")
 
 
 bot.on("guildMemberAdd" , member => {
-    member.guild.channels.find("name","👋nouveaux-départs").send(`${member} est infecté`)
+    member.guild.channels.find("name","👋nouveaux-départs").send(`** Bienvenue ${member} tu est maintenant infecté.**`)
 })
     
 
