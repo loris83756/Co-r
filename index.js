@@ -5,7 +5,7 @@ const { Client, RichEmbed } = require('discord.js');7
 var prefix = ("/")
 
 bot.on("guildMemberAdd" , member => {
-    member.guild.channels.find("name","👋nouveaux-départs").send(`**${member} tu est maintenant infecté**`)
+    member.guild.channels.find("name","👋nouveaux-départs").send(`**Bienvenue ${member} tu est maintenant infecté**`)
 })
 
 bot.on(`guildMemberAdd`,member => {
