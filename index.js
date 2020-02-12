@@ -19,7 +19,7 @@ bot.on(`guildMemberAdd`,member => {
 })
 
  if (message.content === "Bonjour"){
-        message.reply("gegfjegfjfejkfejkfjke");
+        message.send("gegfjegfjfejkfejkfjke");
         console.log(`Commade bonjour effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
         
