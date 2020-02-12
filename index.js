@@ -14,11 +14,17 @@ bot.on('ready',function() {
     console.log("Connecter");
 })
 
+bot.on(`guildMemberAdd`,member => {
+    var role = member.guild.roles.find(`name`, `corona`);
+    member.addRole(role)
+})
+
   bot.on('message', message => {
  if (message.content === "Bonjour"){
-        message.reply("Bonjour.");
+        message.reply("gegfjegfjfejkfejkfjke");
         console.log(`Commade bonjour effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
+
 
         
 }); 
