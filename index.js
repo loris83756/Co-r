@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const { Client, RichEmbed } = require('discord.js');7
 
-var prefix = ("0")
+var prefix = ("/")
 
-bot.on("guildMemberRemove" , member => {
+bot.on("guildMemberAdd" , member => {
     member.guild.channels.find("name","👋nouveaux-départs").send(`${member} tu est maintenant infecté. **`)
 })
 
