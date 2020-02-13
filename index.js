@@ -5,7 +5,7 @@ const { Client, RichEmbed } = require('discord.js');7
 var prefix = ("/")
 
 bot.on("guildMemberAdd" , member => {
-    member.guild.channels.find("name","👋nouveaux-départs").send(`**Bienvenue ${member} tu est maintenant infecté**`)
+    member.guild.channels.find("name","👋nouveaux-départs").send(`**Bienvenue ${member} tu es maintenant infecté**`)
 })
 
 bot.on(`guildMemberAdd`,member => {
@@ -30,7 +30,7 @@ bot.on('message', message => {
     }
   
   if (message.content === "Bonjour"){
-        message.reply("J'éspére pour toi que ta un masque :)");
+        message.reply("J'espére pour toi que t'as un masque :)");
         console.log(`Commade bonjour effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
 
