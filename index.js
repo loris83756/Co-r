@@ -33,6 +33,13 @@ bot.on('message', message => {
         message.reply("J'espére pour toi que t'as un masque :)");
         console.log(`Commade bonjour effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
+    
+    if (message.content === prefix + 'play') {
+const broadcast = client.createVoiceBroadcast();
+broadcast.playFile('.');
+for (const connection of client.voiceConnections.values()) {
+  connection.playBroadcast(broadcast);
+}
 
 }); 
 bot.login(process.env.TOKEN);
