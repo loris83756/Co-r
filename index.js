@@ -34,11 +34,32 @@ bot.on('message', message => {
         console.log(`Commade bonjour effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
     
-    if (message.content === prefix + 'play') {
-const broadcast = client.createVoiceBroadcast();
-broadcast.playFile('.');
-for (const connection of client.voiceConnections.values()) {
-  connection.playBroadcast(broadcast);
+  let messagemusique = message.content.split(" ");
+let musique = messagemusique[0];
+let musiqueargs = messagemusique.slice(1); 
+
+if (musique === prefix + "play") {
+
+if (message.member.voiceChannel)
+}
+if(!message.guild.voiceConnection)
+}
+if (!servers[message.guild.id])
+}
+servers[message.guild.id] = {queue: []}
+}
+message.member.voiceChannel.join()
+.them(connection =>{
+  var server = servers[message.guild.id]
+  message.chennel.send("**Connecter**")
+  server.queue.push(args)
+  Play(connection,message);
+})
+}
+}
+else
+{ 
+message.reply ("**:x: Connecte toi dans le channel avant de faire la commande**")
 }
 
 }); 
