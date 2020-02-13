@@ -35,20 +35,6 @@ bot.on('message', message => {
     }
     
     
-  if (message.content === prefix + 'join') {
-    if (message.member.voiceChannel) {
-      message.member.voiceChannel.join()
-        .then(connection => { 
-      
-          message.channel.send('Connecter au channel.');
-        })
-
-    } else {
-      message.channel.send(':x:Tu doit rejoindre le salon avant.');
-    }
-  }
-
-    
 }); 
 bot.login(process.env.TOKEN);
 
