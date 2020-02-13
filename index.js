@@ -34,34 +34,21 @@ bot.on('message', message => {
         console.log(`Commade bonjour effectué par: ${message.author} sur ${message.guild.name} a ${message.createdAt}`)
     }
     
-  let messagemusique = message.content.split(" ");
-let musique = messagemusique[0];
-let musiqueargs = messagemusique.slice(1); 
+    
+  if (message.content === prefix + 'join') {
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel.join()
+        .then(connection => { 
+      
+          message.channel.send('Connecter au channel.');
+        })
 
-if (musique === prefix + "play") {
+    } else {
+      message.channel.send(':x:Tu doit rejoindre le salon avant.');
+    }
+  }
 
-if (message.member.voiceChannel)
-}
-if(!message.guild.voiceConnection)
-}
-if (!servers[message.guild.id])
-}
-servers[message.guild.id] = {queue: []}
-}
-message.member.voiceChannel.join()
-.them(connection =>{
-  var server = servers[message.guild.id]
-  message.chennel.send("**Connecter**")
-  server.queue.push(args)
-  Play(connection,message);
-})
-}
-}
-else
-{ 
-message.reply ("**:x: Connecte toi dans le channel avant de faire la commande**")
-}
-
+    
 }); 
 bot.login(process.env.TOKEN);
 
